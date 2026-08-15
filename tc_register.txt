@@ -1,189 +1,264 @@
-﻿C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\DatabaseTest.java:11:void TC_T166_shouldSaveTeam() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\DatabaseTest.java:21:void TC_T167_shouldRetrieveSavedTeam() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\DatabaseTest.java:34:void TC_T168_shouldSaveGroup() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\DatabaseTest.java:44:void TC_T169_shouldRetrieveSavedGroup() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\DatabaseTest.java:57:void TC_T170_shouldSaveMatch() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\DatabaseTest.java:70:void TC_T171_shouldRetrieveSavedMatch() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\DatabaseTest.java:86:void TC_T172_shouldSavePlayer() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\DatabaseTest.java:99:void TC_T173_shouldRetrieveSavedPlayer() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\DatabaseTest.java:115:void TC_T174_shouldSaveMatchResult() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\DatabaseTest.java:129:void TC_T175_shouldRetrieveSavedMatchResult() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:11:void TC_T072_shouldAccept32Teams() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:19:void TC_T073_shouldRejectNon32TeamCount() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:27:void TC_T074_shouldAcceptFourTeamsInGroup() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:35:void TC_T075_shouldRejectNonFourTeamGroup() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:43:void TC_T076_shouldAcceptThreeOpponents() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:51:void TC_T077_shouldRejectInvalidOpponentCount() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:59:void TC_T078_shouldGiveThreePointsForWin() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:67:void TC_T079_shouldGiveOnePointForDraw() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:75:void TC_T080_shouldGiveZeroPointsForLoss() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:83:void TC_T081_shouldComparePointsFirst() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:97:void TC_T082_shouldCompareGoalDifference() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:111:void TC_T083_shouldCompareCards() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:125:void TC_T084_shouldCompareHeadToHead() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:139:void TC_T085_shouldCompareDrawLot() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:153:void TC_T086_shouldCountOneRedCardAsTwoYellowCards() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:161:void TC_T087_shouldNotCompareNextCriterionWhenCurrentDiffers() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:169:void TC_T088_shouldCompareNextCriterionWhenCurrentIsEqual() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:177:void TC_T089_shouldQualifyFirstPlace() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:185:void TC_T090_shouldQualifySecondPlace() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:193:void TC_T091_shouldReject31Teams() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:201:void TC_T092_shouldAccept32TeamsAtBoundary() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:209:void TC_T093_shouldReject33Teams() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:217:void TC_T094_shouldRejectThreeTeamsInGroup() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:225:void TC_T095_shouldAcceptFourTeamsAtBoundary() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:233:void TC_T096_shouldRejectFiveTeamsInGroup() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:241:void TC_T097_shouldRejectTwoOpponents() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:249:void TC_T098_shouldAcceptThreeOpponentsAtBoundary() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:257:void TC_T099_shouldRejectFourOpponents() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:265:void TC_T100_shouldAcceptFirstPlace() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:273:void TC_T101_shouldAcceptSecondPlace() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:281:void TC_T102_shouldRejectThirdPlace() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\GroupStageTest.java:289:void TC_T103_shouldReturnRedCards() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:11:void TC_T104_shouldAccept16TeamsInRoundOf16() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:19:void TC_T105_shouldRejectInvalidRoundOf16TeamCount() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:27:void TC_T106_shouldAcceptMatch1Pairing() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:38:void TC_T107_shouldAcceptMatch2Pairing() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:49:void TC_T108_shouldAcceptMatch3Pairing() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:60:void TC_T109_shouldAcceptMatch4Pairing() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:71:void TC_T110_shouldAcceptMatch5Pairing() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:82:void TC_T111_shouldAcceptMatch6Pairing() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:93:void TC_T112_shouldAcceptMatch7Pairing() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:104:void TC_T113_shouldAcceptMatch8Pairing() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:115:void TC_T114_shouldAcceptEightRoundOf16Winners() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:123:void TC_T115_shouldAcceptFourQuarterfinalMatches() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:131:void TC_T116_shouldAcceptFourSemifinalists() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:139:void TC_T117_shouldAcceptTwoSemifinalMatches() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:147:void TC_T118_shouldAcceptTwoFinalists() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:155:void TC_T119_shouldGiveGoldMedalToWinner() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:163:void TC_T120_shouldGiveSilverMedalToLoser() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:171:void TC_T121_shouldGiveBronzeMedalsToTwoSemifinalLosers() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:179:void TC_T122_shouldReject15Teams() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:187:void TC_T123_shouldAccept16TeamsAtBoundary() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:195:void TC_T124_shouldReject17Teams() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:203:void TC_T125_shouldRejectSevenQuarterfinalWinners() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:211:void TC_T126_shouldAcceptEightQuarterfinalWinnersAtBoundary() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:219:void TC_T127_shouldRejectNineQuarterfinalWinners() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:227:void TC_T128_shouldRejectThreeQuarterfinalMatches() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:235:void TC_T129_shouldAcceptFourQuarterfinalMatchesAtBoundary() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:243:void TC_T130_shouldRejectFiveQuarterfinalMatches() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:251:void TC_T131_shouldRejectThreeSemifinalists() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:259:void TC_T132_shouldAcceptFourSemifinalistsAtBoundary() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:267:void TC_T133_shouldRejectFiveSemifinalists() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:275:void TC_T134_shouldRejectWrongHomeTeamMatch1() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:283:void TC_T135_shouldRejectWrongAwayTeamMatch1() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:291:void TC_T136_shouldRejectWrongHomeTeamMatch2() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:299:void TC_T137_shouldRejectWrongAwayTeamMatch2() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:307:void TC_T138_shouldRejectWrongHomeTeamMatch3() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:315:void TC_T139_shouldRejectWrongAwayTeamMatch3() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:323:void TC_T140_shouldRejectWrongHomeTeamMatch4() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:331:void TC_T141_shouldRejectWrongAwayTeamMatch4() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:339:void TC_T142_shouldRejectWrongHomeTeamMatch5() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:347:void TC_T143_shouldRejectWrongAwayTeamMatch5() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:355:void TC_T144_shouldRejectWrongHomeTeamMatch6() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:363:void TC_T145_shouldRejectWrongAwayTeamMatch6() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:371:void TC_T146_shouldRejectWrongHomeTeamMatch7() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:379:void TC_T147_shouldRejectWrongAwayTeamMatch7() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:387:void TC_T148_shouldRejectWrongHomeTeamMatch8() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:395:void TC_T149_shouldRejectWrongAwayTeamMatch8() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:403:void TC_T150_shouldRejectFiveSemifinalists() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:411:void TC_T151_shouldRejectThreeFinalists() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:419:void TC_T152_shouldRejectThreeSemifinalLosers() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\KnockoutStageTest.java:427:void TC_T153_shouldRejectThreeSemifinalMatches() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:11:void TC_T025_shouldAccept90MinuteMatch() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:18:void TC_T026_shouldRejectNon90MinuteMatch() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:25:void TC_T027_shouldAccept45MinuteHalf() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:32:void TC_T028_shouldRejectNon45MinuteHalf() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:39:void TC_T029_shouldAccept15MinuteBreak() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:46:void TC_T030_shouldRejectBreakOver15Minutes() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:53:void TC_T031_shouldAcceptZeroExtraTimeHalves() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:60:void TC_T032_shouldAcceptUpToTwoExtraTimeHalves() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:67:void TC_T033_shouldRejectMoreThanTwoExtraTimeHalves() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:74:void TC_T034_shouldAccept30MinuteExtraHalf() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:81:void TC_T035_shouldRejectNon30MinuteExtraHalf() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:88:void TC_T036_shouldEndMatchAfterSilverGoal() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:95:void TC_T037_shouldContinueWhenScoresAreEqual() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:102:void TC_T038_shouldFindWinnerAfterFivePenalties() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:109:void TC_T039_shouldRequireSuddenDeathAfterFivePenalties() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:116:void TC_T040_shouldKeepPlayerAfterFirstYellowCard() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:123:void TC_T041_shouldRemovePlayerAfterSecondYellowCard() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:130:void TC_T042_shouldRemovePlayerAfterRedCard() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:137:void TC_T043_shouldAcceptSevenPlayersOnField() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:144:void TC_T044_shouldRejectSixPlayersOnField() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:151:void TC_T045_shouldAcceptThreeSubstitutions() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:158:void TC_T046_shouldRejectMoreThanThreeSubstitutions() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:165:void TC_T047_shouldAcceptOnePlayerPerSubstitution() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:172:void TC_T048_shouldRejectInvalidSubstitutionBatch() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:179:void TC_T049_shouldAllowAnyPlayerPositionForSubstitution() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:186:void TC_T050_shouldAccept14MinuteBreak() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:193:void TC_T051_shouldAccept15MinuteBreakAtBoundary() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:200:void TC_T052_shouldReject16MinuteBreak() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:207:void TC_T053_shouldAcceptOneExtraTimeHalf() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:214:void TC_T054_shouldAcceptTwoExtraTimeHalvesAtBoundary() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:221:void TC_T055_shouldRejectThreeExtraTimeHalves() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:228:void TC_T056_shouldReject29MinuteExtraHalf() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:235:void TC_T057_shouldAccept30MinuteExtraHalfAtBoundary() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:242:void TC_T058_shouldReject31MinuteExtraHalf() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:249:void TC_T059_shouldRejectSixPlayersAtBoundary() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:256:void TC_T060_shouldAcceptSevenPlayersAtBoundary() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:263:void TC_T061_shouldAcceptTwoSubstitutions() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:270:void TC_T062_shouldAcceptThreeSubstitutionsAtBoundary() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:277:void TC_T063_shouldRejectFourSubstitutions() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:284:void TC_T064_shouldRejectZeroPlayersPerSubstitution() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:291:void TC_T065_shouldAcceptOnePlayerPerSubstitution() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:298:void TC_T066_shouldAcceptThreePlayersPerSubstitution() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:305:void TC_T067_shouldRejectFourPlayersPerSubstitution() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:312:void TC_T068_shouldNotFindWinnerWhenPenaltyScoresAreEqual() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:320:void TC_T069_shouldNotRequireSuddenDeathWhenPenaltyScoresDiffer() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:328:void TC_T070_shouldRejectNegativeExtraTimeHalves() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\MatchTest.java:336:void TC_T071_shouldRejectNegativeSubstitutions() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TeamTest.java:11:void TC_T001_shouldAcceptCountryName() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TeamTest.java:21:void TC_T002_shouldAcceptOneHeadCoach() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TeamTest.java:31:void TC_T003_shouldAcceptThreeAssistantCoaches() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TeamTest.java:43:void TC_T004_shouldRejectFourAssistantCoaches() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TeamTest.java:55:void TC_T005_shouldAcceptTwoAssistantCoaches() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TeamTest.java:67:void TC_T006_shouldAccept22Players() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TeamTest.java:79:void TC_T007_shouldReject23Players() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TeamTest.java:91:void TC_T008_shouldAccept21Players() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TeamTest.java:103:void TC_T009_shouldAcceptSevenStartingPlayers() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TeamTest.java:115:void TC_T010_shouldAcceptElevenStartingPlayers() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TeamTest.java:127:void TC_T011_shouldRejectSixStartingPlayers() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TeamTest.java:139:void TC_T012_shouldRejectTwelveStartingPlayers() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TeamTest.java:151:void TC_T013_shouldAcceptFiveSubstitutes() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TeamTest.java:163:void TC_T014_shouldRejectSixSubstitutes() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TeamTest.java:175:void TC_T015_shouldAcceptFourSubstitutes() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TeamTest.java:187:void TC_T016_shouldReturnAssistantCoaches() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TeamTest.java:197:void TC_T017_shouldReturnPlayers() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TeamTest.java:207:void TC_T018_shouldReturnStartingPlayers() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TeamTest.java:217:void TC_T019_shouldReturnSubstitutes() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TeamTest.java:227:void TC_T020_shouldAcceptOneStaffMember() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TestWorldCupTDDTest.java:11:void TC_T023_shouldCreateApplicationObject() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TestWorldCupTDDTest.java:17:void TC_T024_shouldRunMainMethod() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TopScorerTest.java:14:void TC_T154_shouldRecordGoalScorer() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TopScorerTest.java:24:void TC_T155_shouldTrackGoalsAcrossMultipleMatches() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TopScorerTest.java:39:void TC_T156_shouldReturnPlayerWithMostGoals() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TopScorerTest.java:54:void TC_T157_shouldNotReturnPlayerWithFewerGoals() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TopScorerTest.java:66:void TC_T158_shouldReturnTwoSharedTopScorers() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TopScorerTest.java:83:void TC_T159_shouldReturnMultipleSharedTopScorers() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TopScorerTest.java:100:void TC_T160_shouldReturnNoTopScorerWhenNoGoalsAreRecorded() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TopScorerTest.java:108:void TC_T161_shouldAcceptOneGoalAsHighestScore() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TopScorerTest.java:121:void TC_T162_shouldIdentifyHighestGoalCount() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TopScorerTest.java:133:void TC_T163_shouldIdentifySharedTopScorer() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TopScorerTest.java:145:void TC_T164_shouldReturnFalseWhenThereIsOnlyOneTopScorer() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TopScorerTest.java:156:void TC_T165_shouldReturnFalseForNonTopScorer() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TournamentTest.java:11:void TC_T176_shouldAccept32Teams() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TournamentTest.java:19:void TC_T177_shouldReject31Teams() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TournamentTest.java:27:void TC_T178_shouldAccept32TeamsAtBoundary() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TournamentTest.java:35:void TC_T179_shouldReject33Teams() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TournamentTest.java:43:void TC_T180_shouldCreateEightGroups() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TournamentTest.java:54:void TC_T181_shouldRejectGroupWithThreeTeams() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TournamentTest.java:62:void TC_T182_shouldAcceptGroupWithFourTeams() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TournamentTest.java:70:void TC_T183_shouldRejectGroupWithFiveTeams() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TournamentTest.java:78:void TC_T184_shouldRunGroupStageAutomatically() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TournamentTest.java:89:void TC_T185_shouldRecordGroupStageResults() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TournamentTest.java:101:void TC_T186_shouldMoveQualifiedTeamsToRoundOf16() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TournamentTest.java:114:void TC_T187_shouldKeepNonQualifiedTeamsOutOfRoundOf16() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TournamentTest.java:130:void TC_T188_shouldRunKnockoutStageAutomatically() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TournamentTest.java:143:void TC_T189_shouldIdentifyChampion() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TournamentTest.java:157:void TC_T190_shouldUpdateResultsInDatabase() {
-C:\KTPM\netbean\TestWorldCupTDD\src\test\java\com\testworldcup\testworldcuptdd\TournamentTest.java:169:void TC_T191_shouldExportTournamentResults() {
+TestWorldCupTDD - Test Case Register
+============================================================
+Source: TestWorldCupTDD_Test_Case_Register_255(1).xlsx
+Register entries: 255
+Validated Allure result: 255 / 255 PASS
+============================================================
+
+REGISTER_ID | CODE_TEST_ID | TEST_CLASS | TEST_METHOD | SOURCE_FILE | CATEGORY | RESULT | NOTES
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+REG-001 | TC-T001 | TeamTest | TC_T001_shouldAcceptCountryName | src/test/java/com/testworldcup/testworldcuptdd/TeamTest.java | Team | PASS* | 
+REG-002 | TC-T002 | TeamTest | TC_T002_shouldAcceptOneHeadCoach | src/test/java/com/testworldcup/testworldcuptdd/TeamTest.java | Team | PASS* | 
+REG-003 | TC-T003 | TeamTest | TC_T003_shouldAcceptThreeAssistantCoaches | src/test/java/com/testworldcup/testworldcuptdd/TeamTest.java | Team | PASS* | 
+REG-004 | TC-T004 | TeamTest | TC_T004_shouldRejectFourAssistantCoaches | src/test/java/com/testworldcup/testworldcuptdd/TeamTest.java | Team | PASS* | 
+REG-005 | TC-T005 | TeamTest | TC_T005_shouldAcceptTwoAssistantCoaches | src/test/java/com/testworldcup/testworldcuptdd/TeamTest.java | Team | PASS* | 
+REG-006 | TC-T006 | TeamTest | TC_T006_shouldAccept22Players | src/test/java/com/testworldcup/testworldcuptdd/TeamTest.java | Team | PASS* | 
+REG-007 | TC-T007 | TeamTest | TC_T007_shouldReject23Players | src/test/java/com/testworldcup/testworldcuptdd/TeamTest.java | Team | PASS* | 
+REG-008 | TC-T008 | TeamTest | TC_T008_shouldAccept21Players | src/test/java/com/testworldcup/testworldcuptdd/TeamTest.java | Team | PASS* | 
+REG-009 | TC-T009 | TeamTest | TC_T009_shouldAcceptSevenStartingPlayers | src/test/java/com/testworldcup/testworldcuptdd/TeamTest.java | Team | PASS* | 
+REG-010 | TC-T010 | TeamTest | TC_T010_shouldAcceptElevenStartingPlayers | src/test/java/com/testworldcup/testworldcuptdd/TeamTest.java | Team | PASS* | 
+REG-011 | TC-T011 | TeamTest | TC_T011_shouldRejectSixStartingPlayers | src/test/java/com/testworldcup/testworldcuptdd/TeamTest.java | Team | PASS* | 
+REG-012 | TC-T012 | TeamTest | TC_T012_shouldRejectTwelveStartingPlayers | src/test/java/com/testworldcup/testworldcuptdd/TeamTest.java | Team | PASS* | 
+REG-013 | TC-T013 | TeamTest | TC_T013_shouldAcceptFiveSubstitutes | src/test/java/com/testworldcup/testworldcuptdd/TeamTest.java | Team | PASS* | 
+REG-014 | TC-T014 | TeamTest | TC_T014_shouldRejectSixSubstitutes | src/test/java/com/testworldcup/testworldcuptdd/TeamTest.java | Team | PASS* | 
+REG-015 | TC-T015 | TeamTest | TC_T015_shouldAcceptFourSubstitutes | src/test/java/com/testworldcup/testworldcuptdd/TeamTest.java | Team | PASS* | 
+REG-016 | TC-T016 | TeamTest | TC_T016_shouldReturnAssistantCoaches | src/test/java/com/testworldcup/testworldcuptdd/TeamTest.java | Team | PASS* | 
+REG-017 | TC-T017 | TeamTest | TC_T017_shouldReturnPlayers | src/test/java/com/testworldcup/testworldcuptdd/TeamTest.java | Team | PASS* | 
+REG-018 | TC-T018 | TeamTest | TC_T018_shouldReturnStartingPlayers | src/test/java/com/testworldcup/testworldcuptdd/TeamTest.java | Team | PASS* | 
+REG-019 | TC-T019 | TeamTest | TC_T019_shouldReturnSubstitutes | src/test/java/com/testworldcup/testworldcuptdd/TeamTest.java | Team | PASS* | 
+REG-020 | TC-T020 | TeamTest | TC_T020_shouldAcceptOneStaffMember | src/test/java/com/testworldcup/testworldcuptdd/TeamTest.java | Team | PASS* | 
+REG-021 | TC-T021 | ProjectSetupTest | TC_T021_shouldRunJUnitTestEnvironment | src/test/java/com/testworldcup/testworldcuptdd/ProjectSetupTest.java | Project Setup | PASS* | 
+REG-022 | TC-T022 | ProjectSetupTest | TC_T022_shouldCreateProjectSetupTestObject | src/test/java/com/testworldcup/testworldcuptdd/ProjectSetupTest.java | Project Setup | PASS* | 
+REG-023 | TC-T023 | TestWorldCupTDDTest | TC_T023_shouldCreateApplicationObject | src/test/java/com/testworldcup/testworldcuptdd/TestWorldCupTDDTest.java | WorldCupTDD | PASS* | 
+REG-024 | TC-T024 | TestWorldCupTDDTest | TC_T024_shouldRunMainMethod | src/test/java/com/testworldcup/testworldcuptdd/TestWorldCupTDDTest.java | WorldCupTDD | PASS* | 
+REG-025 | TC-T025 | MatchTest | TC_T025_shouldAccept90MinuteMatch | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-026 | TC-T026 | MatchTest | TC_T026_shouldRejectNon90MinuteMatch | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-027 | TC-T027 | MatchTest | TC_T027_shouldAccept45MinuteHalf | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-028 | TC-T028 | MatchTest | TC_T028_shouldRejectNon45MinuteHalf | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-029 | TC-T029 | MatchTest | TC_T029_shouldAccept15MinuteBreak | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-030 | TC-T030 | MatchTest | TC_T030_shouldRejectBreakOver15Minutes | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-031 | TC-T031 | MatchTest | TC_T031_shouldAcceptZeroExtraTimeHalves | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-032 | TC-T032 | MatchTest | TC_T032_shouldAcceptUpToTwoExtraTimeHalves | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-033 | TC-T033 | MatchTest | TC_T033_shouldRejectMoreThanTwoExtraTimeHalves | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-034 | TC-T034 | MatchTest | TC_T034_shouldAccept30MinuteExtraHalf | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-035 | TC-T035 | MatchTest | TC_T035_shouldRejectNon30MinuteExtraHalf | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-036 | TC-T036 | MatchTest | TC_T036_shouldEndMatchAfterSilverGoal | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-037 | TC-T037 | MatchTest | TC_T037_shouldContinueWhenScoresAreEqual | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-038 | TC-T038 | MatchTest | TC_T038_shouldFindWinnerAfterFivePenalties | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-039 | TC-T039 | MatchTest | TC_T039_shouldRequireSuddenDeathAfterFivePenalties | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-040 | TC-T040 | MatchTest | TC_T040_shouldKeepPlayerAfterFirstYellowCard | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-041 | TC-T041 | MatchTest | TC_T041_shouldRemovePlayerAfterSecondYellowCard | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-042 | TC-T042 | MatchTest | TC_T042_shouldRemovePlayerAfterRedCard | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-043 | TC-T043 | MatchTest | TC_T043_shouldAcceptSevenPlayersOnField | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-044 | TC-T044 | MatchTest | TC_T044_shouldRejectSixPlayersOnField | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-045 | TC-T045 | MatchTest | TC_T045_shouldAcceptThreeSubstitutions | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-046 | TC-T046 | MatchTest | TC_T046_shouldRejectMoreThanThreeSubstitutions | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-047 | TC-T047 | MatchTest | TC_T047_shouldAcceptOnePlayerPerSubstitution | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-048 | TC-T048 | MatchTest | TC_T048_shouldRejectInvalidSubstitutionBatch | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-049 | TC-T049 | MatchTest | TC_T049_shouldAllowAnyPlayerPositionForSubstitution | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-050 | TC-T050 | MatchTest | TC_T050_shouldAccept14MinuteBreak | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-051 | TC-T051 | MatchTest | TC_T051_shouldAccept15MinuteBreakAtBoundary | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-052 | TC-T052 | MatchTest | TC_T052_shouldReject16MinuteBreak | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-053 | TC-T053 | MatchTest | TC_T053_shouldAcceptOneExtraTimeHalf | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-054 | TC-T054 | MatchTest | TC_T054_shouldAcceptTwoExtraTimeHalvesAtBoundary | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-055 | TC-T055 | MatchTest | TC_T055_shouldRejectThreeExtraTimeHalves | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-056 | TC-T056 | MatchTest | TC_T056_shouldReject29MinuteExtraHalf | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-057 | TC-T057 | MatchTest | TC_T057_shouldAccept30MinuteExtraHalfAtBoundary | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-058 | TC-T058 | MatchTest | TC_T058_shouldReject31MinuteExtraHalf | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-059 | TC-T059 | MatchTest | TC_T059_shouldRejectSixPlayersAtBoundary | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-060 | TC-T060 | MatchTest | TC_T060_shouldAcceptSevenPlayersAtBoundary | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-061 | TC-T061 | MatchTest | TC_T061_shouldAcceptTwoSubstitutions | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-062 | TC-T062 | MatchTest | TC_T062_shouldAcceptThreeSubstitutionsAtBoundary | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-063 | TC-T063 | MatchTest | TC_T063_shouldRejectFourSubstitutions | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-064 | TC-T064 | MatchTest | TC_T064_shouldRejectZeroPlayersPerSubstitution | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-065 | TC-T065 | MatchTest | TC_T065_shouldAcceptOnePlayerPerSubstitution | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-066 | TC-T066 | MatchTest | TC_T066_shouldAcceptThreePlayersPerSubstitution | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-067 | TC-T067 | MatchTest | TC_T067_shouldRejectFourPlayersPerSubstitution | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-068 | TC-T068 | MatchTest | TC_T068_shouldNotFindWinnerWhenPenaltyScoresAreEqual | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-069 | TC-T069 | MatchTest | TC_T069_shouldNotRequireSuddenDeathWhenPenaltyScoresDiffer | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-070 | TC-T070 | MatchTest | TC_T070_shouldRejectNegativeExtraTimeHalves | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-071 | TC-T071 | MatchTest | TC_T071_shouldRejectNegativeSubstitutions | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-072 | TC-T072 | GroupStageTest | TC_T072_shouldAccept32Teams | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-073 | TC-T073 | GroupStageTest | TC_T073_shouldRejectNon32TeamCount | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-074 | TC-T074 | GroupStageTest | TC_T074_shouldAcceptFourTeamsInGroup | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-075 | TC-T075 | GroupStageTest | TC_T075_shouldRejectNonFourTeamGroup | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-076 | TC-T076 | GroupStageTest | TC_T076_shouldAcceptThreeOpponents | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-077 | TC-T077 | GroupStageTest | TC_T077_shouldRejectInvalidOpponentCount | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-078 | TC-T078 | GroupStageTest | TC_T078_shouldGiveThreePointsForWin | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-079 | TC-T079 | GroupStageTest | TC_T079_shouldGiveOnePointForDraw | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-080 | TC-T080 | GroupStageTest | TC_T080_shouldGiveZeroPointsForLoss | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-081 | TC-T081 | GroupStageTest | TC_T081_shouldComparePointsFirst | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-082 | TC-T082 | GroupStageTest | TC_T082_shouldCompareGoalDifference | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-083 | TC-T083 | GroupStageTest | TC_T083_shouldCompareCards | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-084 | TC-T084 | GroupStageTest | TC_T084_shouldCompareHeadToHead | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-085 | TC-T085 | GroupStageTest | TC_T085_shouldCompareDrawLot | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-086 | TC-T086 | GroupStageTest | TC_T086_shouldCountOneRedCardAsTwoYellowCards | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-087 | TC-T087 | GroupStageTest | TC_T087_shouldNotCompareNextCriterionWhenCurrentDiffers | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-088 | TC-T088 | GroupStageTest | TC_T088_shouldCompareNextCriterionWhenCurrentIsEqual | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-089 | TC-T089 | GroupStageTest | TC_T089_shouldQualifyFirstPlace | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-090 | TC-T090 | GroupStageTest | TC_T090_shouldQualifySecondPlace | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-091 | TC-T091 | GroupStageTest | TC_T091_shouldReject31Teams | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-092 | TC-T092 | GroupStageTest | TC_T092_shouldAccept32TeamsAtBoundary | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-093 | TC-T093 | GroupStageTest | TC_T093_shouldReject33Teams | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-094 | TC-T094 | GroupStageTest | TC_T094_shouldRejectThreeTeamsInGroup | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-095 | TC-T095 | GroupStageTest | TC_T095_shouldAcceptFourTeamsAtBoundary | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-096 | TC-T096 | GroupStageTest | TC_T096_shouldRejectFiveTeamsInGroup | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-097 | TC-T097 | GroupStageTest | TC_T097_shouldRejectTwoOpponents | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-098 | TC-T098 | GroupStageTest | TC_T098_shouldAcceptThreeOpponentsAtBoundary | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-099 | TC-T099 | GroupStageTest | TC_T099_shouldRejectFourOpponents | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-100 | TC-T100 | GroupStageTest | TC_T100_shouldAcceptFirstPlace | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-101 | TC-T101 | GroupStageTest | TC_T101_shouldAcceptSecondPlace | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-102 | TC-T102 | GroupStageTest | TC_T102_shouldRejectThirdPlace | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-103 | TC-T103 | GroupStageTest | TC_T103_shouldReturnRedCards | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-104 | TC-T104 | KnockoutStageTest | TC_T104_shouldAccept16TeamsInRoundOf16 | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-105 | TC-T105 | KnockoutStageTest | TC_T105_shouldRejectInvalidRoundOf16TeamCount | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-106 | TC-T106 | KnockoutStageTest | TC_T106_shouldAcceptMatch1Pairing | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-107 | TC-T107 | KnockoutStageTest | TC_T107_shouldAcceptMatch2Pairing | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-108 | TC-T108 | KnockoutStageTest | TC_T108_shouldAcceptMatch3Pairing | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-109 | TC-T109 | KnockoutStageTest | TC_T109_shouldAcceptMatch4Pairing | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-110 | TC-T110 | KnockoutStageTest | TC_T110_shouldAcceptMatch5Pairing | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-111 | TC-T111 | KnockoutStageTest | TC_T111_shouldAcceptMatch6Pairing | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-112 | TC-T112 | KnockoutStageTest | TC_T112_shouldAcceptMatch7Pairing | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-113 | TC-T113 | KnockoutStageTest | TC_T113_shouldAcceptMatch8Pairing | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-114 | TC-T114 | KnockoutStageTest | TC_T114_shouldAcceptEightRoundOf16Winners | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-115 | TC-T115 | KnockoutStageTest | TC_T115_shouldAcceptFourQuarterfinalMatches | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-116 | TC-T116 | KnockoutStageTest | TC_T116_shouldAcceptFourSemifinalists | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-117 | TC-T117 | KnockoutStageTest | TC_T117_shouldAcceptTwoSemifinalMatches | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-118 | TC-T118 | KnockoutStageTest | TC_T118_shouldAcceptTwoFinalists | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-119 | TC-T119 | KnockoutStageTest | TC_T119_shouldGiveGoldMedalToWinner | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-120 | TC-T120 | KnockoutStageTest | TC_T120_shouldGiveSilverMedalToLoser | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-121 | TC-T121 | KnockoutStageTest | TC_T121_shouldGiveBronzeMedalsToTwoSemifinalLosers | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-122 | TC-T122 | KnockoutStageTest | TC_T122_shouldReject15Teams | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-123 | TC-T123 | KnockoutStageTest | TC_T123_shouldAccept16TeamsAtBoundary | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-124 | TC-T124 | KnockoutStageTest | TC_T124_shouldReject17Teams | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-125 | TC-T125 | KnockoutStageTest | TC_T125_shouldRejectSevenQuarterfinalWinners | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-126 | TC-T126 | KnockoutStageTest | TC_T126_shouldAcceptEightQuarterfinalWinnersAtBoundary | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-127 | TC-T127 | KnockoutStageTest | TC_T127_shouldRejectNineQuarterfinalWinners | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-128 | TC-T128 | KnockoutStageTest | TC_T128_shouldRejectThreeQuarterfinalMatches | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-129 | TC-T129 | KnockoutStageTest | TC_T129_shouldAcceptFourQuarterfinalMatchesAtBoundary | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-130 | TC-T130 | KnockoutStageTest | TC_T130_shouldRejectFiveQuarterfinalMatches | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-131 | TC-T131 | KnockoutStageTest | TC_T131_shouldRejectThreeSemifinalists | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-132 | TC-T132 | KnockoutStageTest | TC_T132_shouldAcceptFourSemifinalistsAtBoundary | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-133 | TC-T133 | KnockoutStageTest | TC_T133_shouldRejectFiveSemifinalists | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-134 | TC-T134 | KnockoutStageTest | TC_T134_shouldRejectWrongHomeTeamMatch1 | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-135 | TC-T135 | KnockoutStageTest | TC_T135_shouldRejectWrongAwayTeamMatch1 | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-136 | TC-T136 | KnockoutStageTest | TC_T136_shouldRejectWrongHomeTeamMatch2 | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-137 | TC-T137 | KnockoutStageTest | TC_T137_shouldRejectWrongAwayTeamMatch2 | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-138 | TC-T138 | KnockoutStageTest | TC_T138_shouldRejectWrongHomeTeamMatch3 | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-139 | TC-T139 | KnockoutStageTest | TC_T139_shouldRejectWrongAwayTeamMatch3 | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-140 | TC-T140 | KnockoutStageTest | TC_T140_shouldRejectWrongHomeTeamMatch4 | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-141 | TC-T141 | KnockoutStageTest | TC_T141_shouldRejectWrongAwayTeamMatch4 | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-142 | TC-T142 | KnockoutStageTest | TC_T142_shouldRejectWrongHomeTeamMatch5 | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-143 | TC-T143 | KnockoutStageTest | TC_T143_shouldRejectWrongAwayTeamMatch5 | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-144 | TC-T144 | KnockoutStageTest | TC_T144_shouldRejectWrongHomeTeamMatch6 | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-145 | TC-T145 | KnockoutStageTest | TC_T145_shouldRejectWrongAwayTeamMatch6 | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-146 | TC-T146 | KnockoutStageTest | TC_T146_shouldRejectWrongHomeTeamMatch7 | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-147 | TC-T147 | KnockoutStageTest | TC_T147_shouldRejectWrongAwayTeamMatch7 | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-148 | TC-T148 | KnockoutStageTest | TC_T148_shouldRejectWrongHomeTeamMatch8 | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-149 | TC-T149 | KnockoutStageTest | TC_T149_shouldRejectWrongAwayTeamMatch8 | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-150 | TC-T150 | KnockoutStageTest | TC_T150_shouldRejectFiveSemifinalists | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-151 | TC-T151 | KnockoutStageTest | TC_T151_shouldRejectThreeFinalists | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-152 | TC-T152 | KnockoutStageTest | TC_T152_shouldRejectThreeSemifinalLosers | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-153 | TC-T153 | KnockoutStageTest | TC_T153_shouldRejectThreeSemifinalMatches | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-154 | TC-T154 | TopScorerTest | TC_T154_shouldRecordGoalScorer | src/test/java/com/testworldcup/testworldcuptdd/TopScorerTest.java | TopScorer | PASS* | 
+REG-155 | TC-T155 | TopScorerTest | TC_T155_shouldTrackGoalsAcrossMultipleMatches | src/test/java/com/testworldcup/testworldcuptdd/TopScorerTest.java | TopScorer | PASS* | 
+REG-156 | TC-T156 | TopScorerTest | TC_T156_shouldReturnPlayerWithMostGoals | src/test/java/com/testworldcup/testworldcuptdd/TopScorerTest.java | TopScorer | PASS* | 
+REG-157 | TC-T157 | TopScorerTest | TC_T157_shouldNotReturnPlayerWithFewerGoals | src/test/java/com/testworldcup/testworldcuptdd/TopScorerTest.java | TopScorer | PASS* | 
+REG-158 | TC-T158 | TopScorerTest | TC_T158_shouldReturnTwoSharedTopScorers | src/test/java/com/testworldcup/testworldcuptdd/TopScorerTest.java | TopScorer | PASS* | 
+REG-159 | TC-T159 | TopScorerTest | TC_T159_shouldReturnMultipleSharedTopScorers | src/test/java/com/testworldcup/testworldcuptdd/TopScorerTest.java | TopScorer | PASS* | 
+REG-160 | TC-T160 | TopScorerTest | TC_T160_shouldReturnNoTopScorerWhenNoGoalsAreRecorded | src/test/java/com/testworldcup/testworldcuptdd/TopScorerTest.java | TopScorer | PASS* | 
+REG-161 | TC-T161 | TopScorerTest | TC_T161_shouldAcceptOneGoalAsHighestScore | src/test/java/com/testworldcup/testworldcuptdd/TopScorerTest.java | TopScorer | PASS* | 
+REG-162 | TC-T162 | TopScorerTest | TC_T162_shouldIdentifyHighestGoalCount | src/test/java/com/testworldcup/testworldcuptdd/TopScorerTest.java | TopScorer | PASS* | 
+REG-163 | TC-T163 | TopScorerTest | TC_T163_shouldIdentifySharedTopScorer | src/test/java/com/testworldcup/testworldcuptdd/TopScorerTest.java | TopScorer | PASS* | 
+REG-164 | TC-T164 | TopScorerTest | TC_T164_shouldReturnFalseWhenThereIsOnlyOneTopScorer | src/test/java/com/testworldcup/testworldcuptdd/TopScorerTest.java | TopScorer | PASS* | 
+REG-165 | TC-T165 | TopScorerTest | TC_T165_shouldReturnFalseForNonTopScorer | src/test/java/com/testworldcup/testworldcuptdd/TopScorerTest.java | TopScorer | PASS* | 
+REG-166 | TC-T166 | DatabaseTest | TC_T166_shouldSaveTeam | src/test/java/com/testworldcup/testworldcuptdd/DatabaseTest.java | Database | PASS* | 
+REG-167 | TC-T167 | DatabaseTest | TC_T167_shouldRetrieveSavedTeam | src/test/java/com/testworldcup/testworldcuptdd/DatabaseTest.java | Database | PASS* | 
+REG-168 | TC-T168 | DatabaseTest | TC_T168_shouldSaveGroup | src/test/java/com/testworldcup/testworldcuptdd/DatabaseTest.java | Database | PASS* | 
+REG-169 | TC-T169 | DatabaseTest | TC_T169_shouldRetrieveSavedGroup | src/test/java/com/testworldcup/testworldcuptdd/DatabaseTest.java | Database | PASS* | 
+REG-170 | TC-T170 | DatabaseTest | TC_T170_shouldSaveMatch | src/test/java/com/testworldcup/testworldcuptdd/DatabaseTest.java | Database | PASS* | 
+REG-171 | TC-T171 | DatabaseTest | TC_T171_shouldRetrieveSavedMatch | src/test/java/com/testworldcup/testworldcuptdd/DatabaseTest.java | Database | PASS* | 
+REG-172 | TC-T172 | DatabaseTest | TC_T172_shouldSavePlayer | src/test/java/com/testworldcup/testworldcuptdd/DatabaseTest.java | Database | PASS* | 
+REG-173 | TC-T173 | DatabaseTest | TC_T173_shouldRetrieveSavedPlayer | src/test/java/com/testworldcup/testworldcuptdd/DatabaseTest.java | Database | PASS* | 
+REG-174 | TC-T174 | DatabaseTest | TC_T174_shouldSaveMatchResult | src/test/java/com/testworldcup/testworldcuptdd/DatabaseTest.java | Database | PASS* | 
+REG-175 | TC-T175 | DatabaseTest | TC_T175_shouldRetrieveSavedMatchResult | src/test/java/com/testworldcup/testworldcuptdd/DatabaseTest.java | Database | PASS* | 
+REG-176 | TC-T176 | TournamentTest | TC_T176_shouldAccept32Teams | src/test/java/com/testworldcup/testworldcuptdd/TournamentTest.java | Tournament | PASS* | 
+REG-177 | TC-T177 | TournamentTest | TC_T177_shouldReject31Teams | src/test/java/com/testworldcup/testworldcuptdd/TournamentTest.java | Tournament | PASS* | 
+REG-178 | TC-T178 | TournamentTest | TC_T178_shouldAccept32TeamsAtBoundary | src/test/java/com/testworldcup/testworldcuptdd/TournamentTest.java | Tournament | PASS* | 
+REG-179 | TC-T179 | TournamentTest | TC_T179_shouldReject33Teams | src/test/java/com/testworldcup/testworldcuptdd/TournamentTest.java | Tournament | PASS* | 
+REG-180 | TC-T180 | TournamentTest | TC_T180_shouldCreateEightGroups | src/test/java/com/testworldcup/testworldcuptdd/TournamentTest.java | Tournament | PASS* | 
+REG-181 | TC-T181 | TournamentTest | TC_T181_shouldRejectGroupWithThreeTeams | src/test/java/com/testworldcup/testworldcuptdd/TournamentTest.java | Tournament | PASS* | 
+REG-182 | TC-T182 | TournamentTest | TC_T182_shouldAcceptGroupWithFourTeams | src/test/java/com/testworldcup/testworldcuptdd/TournamentTest.java | Tournament | PASS* | 
+REG-183 | TC-T183 | TournamentTest | TC_T183_shouldRejectGroupWithFiveTeams | src/test/java/com/testworldcup/testworldcuptdd/TournamentTest.java | Tournament | PASS* | 
+REG-184 | TC-T184 | TournamentTest | TC_T184_shouldRunGroupStageAutomatically | src/test/java/com/testworldcup/testworldcuptdd/TournamentTest.java | Tournament | PASS* | 
+REG-185 | TC-T185 | TournamentTest | TC_T185_shouldRecordGroupStageResults | src/test/java/com/testworldcup/testworldcuptdd/TournamentTest.java | Tournament | PASS* | 
+REG-186 | TC-T186 | TournamentTest | TC_T186_shouldMoveQualifiedTeamsToRoundOf16 | src/test/java/com/testworldcup/testworldcuptdd/TournamentTest.java | Tournament | PASS* | 
+REG-187 | TC-T187 | TournamentTest | TC_T187_shouldKeepNonQualifiedTeamsOutOfRoundOf16 | src/test/java/com/testworldcup/testworldcuptdd/TournamentTest.java | Tournament | PASS* | 
+REG-188 | TC-T188 | TournamentTest | TC_T188_shouldRunKnockoutStageAutomatically | src/test/java/com/testworldcup/testworldcuptdd/TournamentTest.java | Tournament | PASS* | 
+REG-189 | TC-T189 | TournamentTest | TC_T189_shouldIdentifyChampion | src/test/java/com/testworldcup/testworldcuptdd/TournamentTest.java | Tournament | PASS* | 
+REG-190 | TC-T190 | TournamentTest | TC_T190_shouldUpdateResultsInDatabase | src/test/java/com/testworldcup/testworldcuptdd/TournamentTest.java | Tournament | PASS* | 
+REG-191 | TC-T191 | TournamentTest | TC_T191_shouldExportTournamentResults | src/test/java/com/testworldcup/testworldcuptdd/TournamentTest.java | Tournament | PASS* | 
+REG-192 | TC-T192 | MatchTest | TC_T192_shouldReject89MinuteMatch | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-193 | TC-T193 | MatchTest | TC_T193_shouldReject44MinuteHalf | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-194 | TC-T194 | MatchTest | TC_T194_shouldNotLeavePlayerWithoutRedCard | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-195 | TC-T195 | MatchTest | TC_T195_shouldAcceptZeroSubstitutions | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-196 | TC-T196 | GroupStageTest | TC_T196_shouldReturnEqualWhenPointsAreEqual | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-197 | TC-T197 | GroupStageTest | TC_T197_shouldReturnEqualWhenGoalDifferenceIsEqual | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-198 | TC-T198 | GroupStageTest | TC_T198_shouldReturnEqualWhenCardsAreEqual | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-199 | TC-T199 | GroupStageTest | TC_T199_shouldReturnEqualWhenHeadToHeadIsEqual | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-200 | TC-T200 | GroupStageTest | TC_T200_shouldReturnEqualWhenDrawLotRankIsEqual | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-201 | TC-T201 | GroupStageTest | TC_T201_shouldRejectPositionZero | src/test/java/com/testworldcup/testworldcuptdd/GroupStageTest.java | GroupStage | PASS* | 
+REG-202 | TC-T202 | MatchTest | TC_T202_shouldReject91MinuteMatch | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-203 | TC-T203 | MatchTest | TC_T203_shouldReject46MinuteHalf | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-204 | TC-T204 | MatchTest | TC_T204_shouldRejectFourExtraTimeHalves | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-205 | TC-T205 | MatchTest | TC_T205_shouldReject32MinuteExtraHalf | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-206 | TC-T206 | MatchTest | TC_T206_shouldFindWinnerWithFourToThreePenalties | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-207 | TC-T207 | MatchTest | TC_T207_shouldNotRequireSuddenDeathWithFourToThreePenalties | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-208 | TC-T208 | MatchTest | TC_T208_shouldNotFindWinnerWithThreeToThreePenalties | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-209 | TC-T209 | MatchTest | TC_T209_shouldRequireSuddenDeathWithThreeToThreePenalties | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-210 | TC-T210 | MatchTest | TC_T210_shouldKeepPlayerWithZeroYellowCards | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-211 | TC-T211 | MatchTest | TC_T211_shouldRemovePlayerAfterThreeYellowCards | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-212 | TC-T212 | MatchTest | TC_T212_shouldAcceptEightPlayersOnField | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-213 | TC-T213 | MatchTest | TC_T213_shouldAcceptTenPlayersOnField | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-214 | TC-T214 | MatchTest | TC_T214_shouldAcceptTwoPlayersPerSubstitution | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-215 | TC-T215 | MatchTest | TC_T215_shouldReject28MinuteExtraHalf | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-216 | TC-T216 | MatchTest | TC_T216_shouldAcceptOneMinuteBreak | src/test/java/com/testworldcup/testworldcuptdd/MatchTest.java | Match | PASS* | 
+REG-217 | TC-T217 | KnockoutStageTest | TC_T217_shouldRejectZeroTeamsInRoundOf16 | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-218 | TC-T218 | KnockoutStageTest | TC_T218_shouldRejectNegativeRoundOf16TeamCount | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-219 | TC-T219 | KnockoutStageTest | TC_T219_shouldRejectZeroQuarterfinalWinners | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-220 | TC-T220 | KnockoutStageTest | TC_T220_shouldRejectSixQuarterfinalWinners | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-221 | TC-T221 | KnockoutStageTest | TC_T221_shouldRejectTenQuarterfinalWinners | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-222 | TC-T222 | KnockoutStageTest | TC_T222_shouldRejectZeroQuarterfinalMatches | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-223 | TC-T223 | KnockoutStageTest | TC_T223_shouldRejectSixQuarterfinalMatches | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-224 | TC-T224 | KnockoutStageTest | TC_T224_shouldRejectZeroSemifinalists | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-225 | TC-T225 | KnockoutStageTest | TC_T225_shouldRejectOneSemifinalist | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-226 | TC-T226 | KnockoutStageTest | TC_T226_shouldRejectSixSemifinalists | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-227 | TC-T227 | KnockoutStageTest | TC_T227_shouldRejectZeroSemifinalMatches | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-228 | TC-T228 | KnockoutStageTest | TC_T228_shouldRejectOneSemifinalMatch | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-229 | TC-T229 | KnockoutStageTest | TC_T229_shouldRejectZeroFinalists | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-230 | TC-T230 | KnockoutStageTest | TC_T230_shouldRejectOneFinalist | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-231 | TC-T231 | KnockoutStageTest | TC_T231_shouldRejectFourFinalists | src/test/java/com/testworldcup/testworldcuptdd/KnockoutStageTest.java | KnockoutStage | PASS* | 
+REG-232 | TC-T232 | DatabaseTest | TC_T232_shouldReturnNullForMissingTeam | src/test/java/com/testworldcup/testworldcuptdd/DatabaseTest.java | Database | PASS* | 
+REG-233 | TC-T233 | DatabaseTest | TC_T233_shouldReturnNullForMissingGroup | src/test/java/com/testworldcup/testworldcuptdd/DatabaseTest.java | Database | PASS* | 
+REG-234 | TC-T234 | DatabaseTest | TC_T234_shouldReturnNullForMissingMatch | src/test/java/com/testworldcup/testworldcuptdd/DatabaseTest.java | Database | PASS* | 
+REG-235 | TC-T235 | DatabaseTest | TC_T235_shouldReturnNullForMissingPlayer | src/test/java/com/testworldcup/testworldcuptdd/DatabaseTest.java | Database | PASS* | 
+REG-236 | TC-T236 | DatabaseTest | TC_T236_shouldReturnNullForMissingResult | src/test/java/com/testworldcup/testworldcuptdd/DatabaseTest.java | Database | PASS* | 
+REG-237 | TC-T237 | TopScorerTest | TC_T237_shouldAccumulateThreeGoalsForOnePlayer | src/test/java/com/testworldcup/testworldcuptdd/TopScorerTest.java | TopScorer | PASS* | 
+REG-238 | TC-T238 | TopScorerTest | TC_T238_shouldReturnPlayerWithThreeGoalsAsTopScorer | src/test/java/com/testworldcup/testworldcuptdd/TopScorerTest.java | TopScorer | PASS* | 
+REG-239 | TC-T239 | TopScorerTest | TC_T239_shouldIdentifySingleLeaderAmongThreePlayers | src/test/java/com/testworldcup/testworldcuptdd/TopScorerTest.java | TopScorer | PASS* | 
+REG-240 | TC-T240 | TopScorerTest | TC_T240_shouldCreateSharedTopScorerAfterPlayerCatchesUp | src/test/java/com/testworldcup/testworldcuptdd/TopScorerTest.java | TopScorer | PASS* | 
+REG-241 | TC-T241 | TopScorerTest | TC_T241_shouldUpdateTopScorerAfterAdditionalGoal | src/test/java/com/testworldcup/testworldcuptdd/TopScorerTest.java | TopScorer | PASS* | 
+REG-242 | TC-T242 | TopScorerTest | TC_T242_shouldNotHaveSharedTopScorerWhenNoGoalsExist | src/test/java/com/testworldcup/testworldcuptdd/TopScorerTest.java | TopScorer | PASS* | 
+REG-243 | TC-T243 | TopScorerTest | TC_T243_shouldIdentifyThreeSharedTopScorers | src/test/java/com/testworldcup/testworldcuptdd/TopScorerTest.java | TopScorer | PASS* | 
+REG-244 | TC-T244 | DatabaseTest | TC_T244_shouldSaveAndRetrieveSecondTeam | src/test/java/com/testworldcup/testworldcuptdd/DatabaseTest.java | Database | PASS* | 
+REG-245 | TC-T245 | DatabaseTest | TC_T245_shouldSaveAndRetrieveSecondGroup | src/test/java/com/testworldcup/testworldcuptdd/DatabaseTest.java | Database | PASS* | 
+REG-246 | TC-T246 | DatabaseTest | TC_T246_shouldSaveAndRetrieveSecondMatch | src/test/java/com/testworldcup/testworldcuptdd/DatabaseTest.java | Database | PASS* | 
+REG-247 | TC-T247 | DatabaseTest | TC_T247_shouldSaveAndRetrieveSecondPlayer | src/test/java/com/testworldcup/testworldcuptdd/DatabaseTest.java | Database | PASS* | 
+REG-248 | TC-T248 | DatabaseTest | TC_T248_shouldSaveAndRetrieveSecondMatchResult | src/test/java/com/testworldcup/testworldcuptdd/DatabaseTest.java | Database | PASS* | 
+REG-249 | TC-P001 | PlayerTest | TC_P001_shouldReturnPlayerName | src/test/java/com/testworldcup/testworldcuptdd/PlayerTest.java | Player | PASS* | Existing code ID uses P-series rather than T-series.
+REG-250 | (no code ID) | ProjectSetupTest | junitShouldRun | src/test/java/com/testworldcup/testworldcuptdd/ProjectSetupTest.java | Project Setup | PASS* | Setup test has no TC_* ID in source; retained as a registered test to reconcile the 250-test Allure total.
+REG-251 | TC-WEB-001 | MatchWebTest | TC_WEB_001_validMatchDuration90Minutes | src/test/java/com/testworldcup/testworldcuptdd/selenium/MatchWebTest.java | Selenium Web UI | PASS | Valid boundary-equivalence case: 90 minutes.
+REG-252 | TC-WEB-002 | MatchWebTest | TC_WEB_002_invalidMatchDuration89Minutes | src/test/java/com/testworldcup/testworldcuptdd/selenium/MatchWebTest.java | Selenium Web UI | PASS | Boundary value below valid duration: 89 minutes.
+REG-253 | TC-WEB-003 | MatchWebTest | TC_WEB_003_invalidMatchDuration91Minutes | src/test/java/com/testworldcup/testworldcuptdd/selenium/MatchWebTest.java | Selenium Web UI | PASS | Boundary value above valid duration: 91 minutes.
+REG-254 | TC-WEB-004 | MatchWebTest | TC_WEB_004_verifyMatchRulePage | src/test/java/com/testworldcup/testworldcuptdd/selenium/MatchWebTest.java | Selenium Web UI | PASS | Verifies page title and required UI elements.
+REG-255 | TC-WEB-005 | MatchWebTest | TC_WEB_005_emptyMatchDuration | src/test/java/com/testworldcup/testworldcuptdd/selenium/MatchWebTest.java | Selenium Web UI | PASS | Checks required-field validation for empty duration.

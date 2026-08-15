@@ -34,6 +34,10 @@
         <allure.version>2.35.3</allure.version>
         <allure.report.version>2.39.0</allure.report.version>
         <allure.maven.version>3.0.2</allure.maven.version>
+        
+        <!--- Selenium Webdriver -->
+        <selenium.version>4.35.0</selenium.version>
+        
     </properties>
 
     <dependencies>
@@ -59,6 +63,14 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-jupiter</artifactId>
             <version>${allure.version}</version>
+            <scope>test</scope>
+        </dependency>
+        
+        <!-- Selenium WebDriver -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
             <scope>test</scope>
         </dependency>
 
