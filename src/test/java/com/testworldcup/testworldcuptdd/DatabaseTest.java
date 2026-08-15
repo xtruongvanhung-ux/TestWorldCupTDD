@@ -1,0 +1,143 @@
+package com.testworldcup.testworldcuptdd;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class DatabaseTest {
+
+    // TC-T166 - Lưu đội bóng.
+    @Test
+    void TC_T166_shouldSaveTeam() {
+        Database database = new Database();
+
+        assertTrue(
+                database.saveTeam("T01", "Vietnam")
+        );
+    }
+
+    // TC-T167 - Truy xuất đội bóng đã lưu.
+    @Test
+    void TC_T167_shouldRetrieveSavedTeam() {
+        Database database = new Database();
+
+        database.saveTeam("T01", "Vietnam");
+
+        assertEquals(
+                "Vietnam",
+                database.getTeam("T01")
+        );
+    }
+
+    // TC-T168 - Lưu bảng đấu.
+    @Test
+    void TC_T168_shouldSaveGroup() {
+        Database database = new Database();
+
+        assertTrue(
+                database.saveGroup("G01", "Group A")
+        );
+    }
+
+    // TC-T169 - Truy xuất bảng đấu đã lưu.
+    @Test
+    void TC_T169_shouldRetrieveSavedGroup() {
+        Database database = new Database();
+
+        database.saveGroup("G01", "Group A");
+
+        assertEquals(
+                "Group A",
+                database.getGroup("G01")
+        );
+    }
+
+    // TC-T170 - Lưu trận đấu.
+    @Test
+    void TC_T170_shouldSaveMatch() {
+        Database database = new Database();
+
+        assertTrue(
+                database.saveMatch(
+                        "M01",
+                        "Vietnam vs Thailand"
+                )
+        );
+    }
+
+    // TC-T171 - Truy xuất trận đấu đã lưu.
+    @Test
+    void TC_T171_shouldRetrieveSavedMatch() {
+        Database database = new Database();
+
+        database.saveMatch(
+                "M01",
+                "Vietnam vs Thailand"
+        );
+
+        assertEquals(
+                "Vietnam vs Thailand",
+                database.getMatch("M01")
+        );
+    }
+
+    // TC-T172 - Lưu cầu thủ.
+    @Test
+    void TC_T172_shouldSavePlayer() {
+        Database database = new Database();
+
+        assertTrue(
+                database.savePlayer(
+                        "P01",
+                        "Player A"
+                )
+        );
+    }
+
+    // TC-T173 - Truy xuất cầu thủ đã lưu.
+    @Test
+    void TC_T173_shouldRetrieveSavedPlayer() {
+        Database database = new Database();
+
+        database.savePlayer(
+                "P01",
+                "Player A"
+        );
+
+        assertEquals(
+                "Player A",
+                database.getPlayer("P01")
+        );
+    }
+
+    // TC-T174 - Lưu kết quả trận đấu.
+    @Test
+    void TC_T174_shouldSaveMatchResult() {
+        Database database = new Database();
+
+        assertTrue(
+                database.saveResult(
+                        "M01",
+                        2,
+                        1
+                )
+        );
+    }
+
+    // TC-T175 - Truy xuất kết quả trận đấu đã lưu.
+    @Test
+    void TC_T175_shouldRetrieveSavedMatchResult() {
+        Database database = new Database();
+
+        database.saveResult(
+                "M01",
+                2,
+                1
+        );
+
+        assertEquals(
+                "2-1",
+                database.getResult("M01")
+        );
+    }
+}
