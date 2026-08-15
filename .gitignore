@@ -1,2 +1,12 @@
-/target/
-/nbproject/
+# Maven build output
+target/
+
+# Allure local installation
+.allure/
+
+# Allure generated results/reports
+allure-results/
+allure-report/
+
+# Temporary test register
+tc_register.txt
