@@ -164,4 +164,112 @@ class TopScorerTest {
 
         assertFalse(topScorer.isSharedTopScorer("Player C"));
     }
+    
+    // TC-T237 - Three goals by one player are accumulated.
+    @Test
+    void TC_T237_shouldAccumulateThreeGoalsForOnePlayer() {
+        TopScorer topScorer = new TopScorer();
+
+        topScorer.recordGoal("Player A");
+        topScorer.recordGoal("Player A");
+        topScorer.recordGoal("Player A");
+
+        assertEquals(
+                3,
+                topScorer.getGoalScorers().get("Player A")
+        );
+    }
+
+    // TC-T238 - A player with three goals leads a player with two goals.
+    @Test
+    void TC_T238_shouldReturnPlayerWithThreeGoalsAsTopScorer() {
+        TopScorer topScorer = new TopScorer();
+
+        topScorer.recordGoal("Player A");
+        topScorer.recordGoal("Player A");
+        topScorer.recordGoal("Player A");
+
+        topScorer.recordGoal("Player B");
+        topScorer.recordGoal("Player B");
+
+        assertEquals(
+                List.of("Player A"),
+                topScorer.getTopScorers()
+        );
+    }
+
+    // TC-T239 - One player leads among three players.
+    @Test
+    void TC_T239_shouldIdentifySingleLeaderAmongThreePlayers() {
+        TopScorer topScorer = new TopScorer();
+
+        topScorer.recordGoal("Player A");
+        topScorer.recordGoal("Player A");
+
+        topScorer.recordGoal("Player B");
+
+        topScorer.recordGoal("Player C");
+
+        assertEquals(1, topScorer.getTopScorers().size());
+        assertTrue(topScorer.getTopScorers().contains("Player A"));
+    }
+
+    // TC-T240 - A trailing player becomes a shared top scorer after catching up.
+    @Test
+    void TC_T240_shouldCreateSharedTopScorerAfterPlayerCatchesUp() {
+        TopScorer topScorer = new TopScorer();
+
+        topScorer.recordGoal("Player A");
+        topScorer.recordGoal("Player A");
+
+        topScorer.recordGoal("Player B");
+        topScorer.recordGoal("Player B");
+
+        assertEquals(
+                List.of("Player A", "Player B"),
+                topScorer.getTopScorers()
+        );
+    }
+
+    // TC-T241 - An additional goal changes the top scorer.
+    @Test
+    void TC_T241_shouldUpdateTopScorerAfterAdditionalGoal() {
+        TopScorer topScorer = new TopScorer();
+
+        topScorer.recordGoal("Player A");
+        topScorer.recordGoal("Player B");
+
+        topScorer.recordGoal("Player A");
+
+        assertEquals(
+                List.of("Player A"),
+                topScorer.getTopScorers()
+        );
+    }
+
+    // TC-T242 - No goals means there is no shared top scorer.
+    @Test
+    void TC_T242_shouldNotHaveSharedTopScorerWhenNoGoalsExist() {
+        TopScorer topScorer = new TopScorer();
+
+        assertFalse(
+                topScorer.isSharedTopScorer("Player A")
+        );
+    }
+
+    // TC-T243 - Three players with equal highest scores share the award.
+    @Test
+    void TC_T243_shouldIdentifyThreeSharedTopScorers() {
+        TopScorer topScorer = new TopScorer();
+
+        topScorer.recordGoal("Player A");
+        topScorer.recordGoal("Player B");
+        topScorer.recordGoal("Player C");
+
+        assertEquals(3, topScorer.getTopScorers().size());
+
+        assertTrue(topScorer.isSharedTopScorer("Player A"));
+        assertTrue(topScorer.isSharedTopScorer("Player B"));
+        assertTrue(topScorer.isSharedTopScorer("Player C"));
+    }
 }

@@ -429,4 +429,124 @@ class KnockoutStageTest {
 
         assertFalse(stage.isSemifinalMatchCountValid(3));
     }
+    
+    // TC-T217 - Zero teams cannot form the round of 16.
+    @Test
+    void TC_T217_shouldRejectZeroTeamsInRoundOf16() {
+        KnockoutStage stage = new KnockoutStage();
+
+        assertFalse(stage.isRoundOf16TeamCountValid(0));
+    }
+
+    // TC-T218 - A negative team count is invalid for the round of 16.
+    @Test
+    void TC_T218_shouldRejectNegativeRoundOf16TeamCount() {
+        KnockoutStage stage = new KnockoutStage();
+
+        assertFalse(stage.isRoundOf16TeamCountValid(-1));
+    }
+
+    // TC-T219 - Zero quarterfinal winners are invalid.
+    @Test
+    void TC_T219_shouldRejectZeroQuarterfinalWinners() {
+        KnockoutStage stage = new KnockoutStage();
+
+        assertFalse(stage.isQuarterfinalWinnerCountValid(0));
+    }
+
+    // TC-T220 - Six quarterfinal winners are invalid.
+    @Test
+    void TC_T220_shouldRejectSixQuarterfinalWinners() {
+        KnockoutStage stage = new KnockoutStage();
+
+        assertFalse(stage.isQuarterfinalWinnerCountValid(6));
+    }
+
+    // TC-T221 - Ten quarterfinal winners are invalid.
+    @Test
+    void TC_T221_shouldRejectTenQuarterfinalWinners() {
+        KnockoutStage stage = new KnockoutStage();
+
+        assertFalse(stage.isQuarterfinalWinnerCountValid(10));
+    }
+
+    // TC-T222 - Zero quarterfinal matches are invalid.
+    @Test
+    void TC_T222_shouldRejectZeroQuarterfinalMatches() {
+        KnockoutStage stage = new KnockoutStage();
+
+        assertFalse(stage.isQuarterfinalMatchCountValid(0));
+    }
+
+    // TC-T223 - Six quarterfinal matches are invalid.
+    @Test
+    void TC_T223_shouldRejectSixQuarterfinalMatches() {
+        KnockoutStage stage = new KnockoutStage();
+
+        assertFalse(stage.isQuarterfinalMatchCountValid(6));
+    }
+
+    // TC-T224 - Zero semifinalists are invalid.
+    @Test
+    void TC_T224_shouldRejectZeroSemifinalists() {
+        KnockoutStage stage = new KnockoutStage();
+
+        assertFalse(stage.isSemifinalistCountValid(0));
+    }
+
+    // TC-T225 - One semifinalist is invalid.
+    @Test
+    void TC_T225_shouldRejectOneSemifinalist() {
+        KnockoutStage stage = new KnockoutStage();
+
+        assertFalse(stage.isSemifinalistCountValid(1));
+    }
+
+    // TC-T226 - Six semifinalists are invalid.
+    @Test
+    void TC_T226_shouldRejectSixSemifinalists() {
+        KnockoutStage stage = new KnockoutStage();
+
+        assertFalse(stage.isSemifinalistCountValid(6));
+    }
+
+    // TC-T227 - Zero semifinal matches are invalid.
+    @Test
+    void TC_T227_shouldRejectZeroSemifinalMatches() {
+        KnockoutStage stage = new KnockoutStage();
+
+        assertFalse(stage.isSemifinalMatchCountValid(0));
+    }
+
+    // TC-T228 - One semifinal match is invalid.
+    @Test
+    void TC_T228_shouldRejectOneSemifinalMatch() {
+        KnockoutStage stage = new KnockoutStage();
+
+        assertFalse(stage.isSemifinalMatchCountValid(1));
+    }
+
+    // TC-T229 - Zero finalists are invalid.
+    @Test
+    void TC_T229_shouldRejectZeroFinalists() {
+        KnockoutStage stage = new KnockoutStage();
+
+        assertFalse(stage.isFinalistCountValid(0));
+    }
+
+    // TC-T230 - One finalist is invalid.
+    @Test
+    void TC_T230_shouldRejectOneFinalist() {
+        KnockoutStage stage = new KnockoutStage();
+
+        assertFalse(stage.isFinalistCountValid(1));
+    }
+
+    // TC-T231 - Four finalists are invalid.
+    @Test
+    void TC_T231_shouldRejectFourFinalists() {
+        KnockoutStage stage = new KnockoutStage();
+
+        assertFalse(stage.isFinalistCountValid(4));
+    }
 }

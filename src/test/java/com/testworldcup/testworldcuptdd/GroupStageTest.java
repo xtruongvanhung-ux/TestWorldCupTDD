@@ -292,4 +292,99 @@ class GroupStageTest {
 
         assertEquals(2, standing.getRedCards());
     }
+    
+    // TC-T196 - Two teams with equal points are equal by points.
+    @Test
+    void TC_T196_shouldReturnEqualWhenPointsAreEqual() {
+        GroupStage stage = new GroupStage();
+
+        GroupStage.TeamStanding team1 =
+                new GroupStage.TeamStanding(6, 3, 2, 0, 1, 1);
+
+        GroupStage.TeamStanding team2 =
+                new GroupStage.TeamStanding(6, 1, 1, 0, 2, 2);
+
+        assertEquals(
+                0,
+                stage.compareByPoints(team1, team2)
+        );
+    }
+
+    // TC-T197 - Two teams with equal goal difference are equal by goal difference.
+    @Test
+    void TC_T197_shouldReturnEqualWhenGoalDifferenceIsEqual() {
+        GroupStage stage = new GroupStage();
+
+        GroupStage.TeamStanding team1 =
+                new GroupStage.TeamStanding(6, 3, 2, 0, 1, 1);
+
+        GroupStage.TeamStanding team2 =
+                new GroupStage.TeamStanding(3, 3, 1, 0, 2, 2);
+
+        assertEquals(
+                0,
+                stage.compareByGoalDifference(team1, team2)
+        );
+    }
+
+    // TC-T198 - Two teams with equal yellow cards are equal by cards.
+    @Test
+    void TC_T198_shouldReturnEqualWhenCardsAreEqual() {
+        GroupStage stage = new GroupStage();
+
+        GroupStage.TeamStanding team1 =
+                new GroupStage.TeamStanding(6, 3, 2, 0, 1, 1);
+
+        GroupStage.TeamStanding team2 =
+                new GroupStage.TeamStanding(3, 1, 2, 0, 2, 2);
+
+        assertEquals(
+                0,
+                stage.compareByCards(team1, team2)
+        );
+    }
+
+    // TC-T199 - Two teams with equal head-to-head result are equal.
+    @Test
+    void TC_T199_shouldReturnEqualWhenHeadToHeadIsEqual() {
+        GroupStage stage = new GroupStage();
+
+        GroupStage.TeamStanding team1 =
+                new GroupStage.TeamStanding(6, 3, 2, 0, 1, 1);
+
+        GroupStage.TeamStanding team2 =
+                new GroupStage.TeamStanding(3, 1, 1, 0, 1, 2);
+
+        assertEquals(
+                0,
+                stage.compareByHeadToHead(team1, team2)
+        );
+    }
+
+    // TC-T200 - Two teams with equal draw-lot rank are equal.
+    @Test
+    void TC_T200_shouldReturnEqualWhenDrawLotRankIsEqual() {
+        GroupStage stage = new GroupStage();
+
+        GroupStage.TeamStanding team1 =
+                new GroupStage.TeamStanding(6, 3, 2, 0, 1, 1);
+
+        GroupStage.TeamStanding team2 =
+                new GroupStage.TeamStanding(3, 1, 1, 0, 2, 1);
+
+        assertEquals(
+                0,
+                stage.compareByDrawLot(team1, team2)
+        );
+    }
+
+    // TC-T201 - Position 0 does not qualify for the round of 16.
+    @Test
+    void TC_T201_shouldRejectPositionZero() {
+        GroupStage stage = new GroupStage();
+
+        assertFalse(
+                stage.qualifiesForRoundOf16(0)
+        );
+    }
 }

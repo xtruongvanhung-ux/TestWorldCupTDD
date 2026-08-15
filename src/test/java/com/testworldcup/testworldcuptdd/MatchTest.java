@@ -338,4 +338,156 @@ class MatchTest {
 
         assertFalse(match.isTotalSubstitutionValid(-1));
     }
+    
+    // TC-T192 - A match duration below 90 minutes is invalid.
+    @Test
+    void TC_T192_shouldReject89MinuteMatch() {
+        Match match = new Match();
+
+        assertFalse(match.isMatchDurationValid(89));
+    }
+
+    // TC-T193 - A half duration below 45 minutes is invalid.
+    @Test
+    void TC_T193_shouldReject44MinuteHalf() {
+        Match match = new Match();
+
+        assertFalse(match.isHalfDurationValid(44));
+    }
+
+    // TC-T194 - A player without a red card does not have to leave.
+    @Test
+    void TC_T194_shouldNotLeavePlayerWithoutRedCard() {
+        Match match = new Match();
+
+        assertFalse(match.shouldLeaveAfterRedCard(false));
+    }
+
+    // TC-T195 - Zero substitutions are valid.
+    @Test
+    void TC_T195_shouldAcceptZeroSubstitutions() {
+        Match match = new Match();
+
+        assertTrue(match.isTotalSubstitutionValid(0));
+    }
+    
+    // TC-T202 - A 91-minute match is invalid.
+    @Test
+    void TC_T202_shouldReject91MinuteMatch() {
+        Match match = new Match();
+
+        assertFalse(match.isMatchDurationValid(91));
+    }
+
+    // TC-T203 - A 46-minute half is invalid.
+    @Test
+    void TC_T203_shouldReject46MinuteHalf() {
+        Match match = new Match();
+
+        assertFalse(match.isHalfDurationValid(46));
+    }
+
+    // TC-T204 - Four extra-time halves are invalid.
+    @Test
+    void TC_T204_shouldRejectFourExtraTimeHalves() {
+        Match match = new Match();
+
+        assertFalse(match.isExtraTimeCountValid(4));
+    }
+
+    // TC-T205 - A 32-minute extra-time half is invalid.
+    @Test
+    void TC_T205_shouldReject32MinuteExtraHalf() {
+        Match match = new Match();
+
+        assertFalse(match.isExtraHalfDurationValid(32));
+    }
+
+    // TC-T206 - A team with more successful penalties wins after five kicks.
+    @Test
+    void TC_T206_shouldFindWinnerWithFourToThreePenalties() {
+        Match match = new Match();
+
+        assertTrue(match.hasWinnerAfterFivePenalties(4, 3));
+    }
+
+    // TC-T207 - Different penalty scores do not require sudden death.
+    @Test
+    void TC_T207_shouldNotRequireSuddenDeathWithFourToThreePenalties() {
+        Match match = new Match();
+
+        assertFalse(match.requiresSuddenDeathAfterFivePenalties(4, 3));
+    }
+
+    // TC-T208 - Equal penalty scores mean there is no winner after five kicks.
+    @Test
+    void TC_T208_shouldNotFindWinnerWithThreeToThreePenalties() {
+        Match match = new Match();
+
+        assertFalse(match.hasWinnerAfterFivePenalties(3, 3));
+    }
+
+    // TC-T209 - Equal penalty scores require sudden death.
+    @Test
+    void TC_T209_shouldRequireSuddenDeathWithThreeToThreePenalties() {
+        Match match = new Match();
+
+        assertTrue(match.requiresSuddenDeathAfterFivePenalties(3, 3));
+    }
+
+    // TC-T210 - Zero yellow cards do not remove a player.
+    @Test
+    void TC_T210_shouldKeepPlayerWithZeroYellowCards() {
+        Match match = new Match();
+
+        assertFalse(match.shouldLeaveAfterYellowCards(0));
+    }
+
+    // TC-T211 - Three yellow cards require the player to leave.
+    @Test
+    void TC_T211_shouldRemovePlayerAfterThreeYellowCards() {
+        Match match = new Match();
+
+        assertTrue(match.shouldLeaveAfterYellowCards(3));
+    }
+
+    // TC-T212 - Eight players on the field are valid.
+    @Test
+    void TC_T212_shouldAcceptEightPlayersOnField() {
+        Match match = new Match();
+
+        assertTrue(match.isMinimumPlayersValid(8));
+    }
+
+    // TC-T213 - Ten players on the field are valid.
+    @Test
+    void TC_T213_shouldAcceptTenPlayersOnField() {
+        Match match = new Match();
+
+        assertTrue(match.isMinimumPlayersValid(10));
+    }
+
+    // TC-T214 - A substitution batch of two players is valid.
+    @Test
+    void TC_T214_shouldAcceptTwoPlayersPerSubstitution() {
+        Match match = new Match();
+
+        assertTrue(match.isSubstitutionBatchValid(2));
+    }
+
+    // TC-T215 - A 28-minute extra-time half is invalid.
+    @Test
+    void TC_T215_shouldReject28MinuteExtraHalf() {
+        Match match = new Match();
+
+        assertFalse(match.isExtraHalfDurationValid(28));
+    }
+
+    // TC-T216 - A one-minute half-time break is within the allowed maximum.
+    @Test
+    void TC_T216_shouldAcceptOneMinuteBreak() {
+        Match match = new Match();
+
+        assertTrue(match.isBreakDurationValid(1));
+    }
 }

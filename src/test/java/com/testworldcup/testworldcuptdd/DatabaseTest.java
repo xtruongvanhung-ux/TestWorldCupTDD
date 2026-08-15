@@ -140,4 +140,44 @@ class DatabaseTest {
                 database.getResult("M01")
         );
     }
+    
+    // TC-T232 - A missing team cannot be retrieved.
+    @Test
+    void TC_T232_shouldReturnNullForMissingTeam() {
+        Database database = new Database();
+
+        assertNull(database.getTeam("UNKNOWN"));
+    }
+
+    // TC-T233 - A missing group cannot be retrieved.
+    @Test
+    void TC_T233_shouldReturnNullForMissingGroup() {
+        Database database = new Database();
+
+        assertNull(database.getGroup("UNKNOWN"));
+    }
+
+    // TC-T234 - A missing match cannot be retrieved.
+    @Test
+    void TC_T234_shouldReturnNullForMissingMatch() {
+        Database database = new Database();
+
+        assertNull(database.getMatch("UNKNOWN"));
+    }
+
+    // TC-T235 - A missing player cannot be retrieved.
+    @Test
+    void TC_T235_shouldReturnNullForMissingPlayer() {
+        Database database = new Database();
+
+        assertNull(database.getPlayer("UNKNOWN"));
+    }
+
+    // TC-T236 - A missing match result cannot be retrieved.
+    @Test
+    void TC_T236_shouldReturnNullForMissingResult() {
+        Database database = new Database();
+
+        assertNull(database.getResult("UNKNOWN"));
+    }
 }
