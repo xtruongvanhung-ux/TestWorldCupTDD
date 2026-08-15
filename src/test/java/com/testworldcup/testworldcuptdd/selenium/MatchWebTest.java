@@ -1,5 +1,7 @@
 package com.testworldcup.testworldcuptdd.selenium;
-
+import java.time.Duration;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.AfterAll;
@@ -14,6 +16,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class MatchWebTest {
 
     private static WebDriver driver;
+    private static WebDriverWait wait;
 
     private static final String BASE_URL =
             "http://localhost:8080";
@@ -25,7 +28,12 @@ public class MatchWebTest {
 
         driver.manage().window().maximize();
 
-        driver.get(BASE_URL);
+        wait = new WebDriverWait(
+                driver,
+                Duration.ofSeconds(10)
+);
+
+driver.get(BASE_URL);
     }
 
     // TC_WEB_001
@@ -46,8 +54,11 @@ public class MatchWebTest {
         ).click();
 
         String result =
-                driver.findElement(By.id("result"))
-                        .getText();
+        wait.until(
+                ExpectedConditions.visibilityOfElementLocated(
+                        By.id("result")
+                )
+        ).getText();
 
         assertEquals(
                 "VALID: Match duration is 90 minutes.",
@@ -73,8 +84,11 @@ public class MatchWebTest {
         ).click();
 
         String result =
-                driver.findElement(By.id("result"))
-                        .getText();
+        wait.until(
+                ExpectedConditions.visibilityOfElementLocated(
+                        By.id("result")
+                )
+        ).getText();
 
         assertEquals(
                 "INVALID: Match duration must be 90 minutes.",
@@ -100,8 +114,11 @@ public class MatchWebTest {
         ).click();
 
         String result =
-                driver.findElement(By.id("result"))
-                        .getText();
+        wait.until(
+                ExpectedConditions.visibilityOfElementLocated(
+                        By.id("result")
+                )
+        ).getText();
 
         assertEquals(
                 "INVALID: Match duration must be 90 minutes.",
@@ -164,8 +181,30 @@ public class MatchWebTest {
                 driver.getCurrentUrl()
         );
     }
+    
+    // TC_WEB_006
+    // Invalid numeric input -> INVALID
+    @Test
+    void TC_WEB_006_invalidNumericInput() {
+
+        driver.get(BASE_URL);
+
+        // The HTML input is type="number", so send an invalid
+        // numeric value directly through the URL.
+        driver.get(BASE_URL + "/match?minutes=abc");
+
+        String result =
+                driver.findElement(By.id("result"))
+                        .getText();
+
+        assertEquals(
+                "INVALID: Minutes must be a number.",
+                result
+        );
+    }
 
     @AfterAll
+    
     static void tearDown() {
 
         if (driver != null) {

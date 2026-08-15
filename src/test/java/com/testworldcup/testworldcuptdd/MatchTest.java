@@ -490,4 +490,12 @@ class MatchTest {
 
         assertTrue(match.isBreakDurationValid(1));
     }
+    
+    // TC-T249 - Zero extra-time halves are valid.
+    @Test
+    void TC_T249_shouldAcceptZeroExtraTimeHalvesAtBoundary() {
+        Match match = new Match();
+
+        assertTrue(match.isExtraTimeCountValid(0));
+    }
 }
