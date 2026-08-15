@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -12,20 +12,53 @@
     <packaging>jar</packaging>
 
     <properties>
+        <!-- Project -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>21</maven.compiler.release>
+
         <exec.mainClass>
             com.testworldcup.testworldcuptdd.TestWorldCupTDD
         </exec.mainClass>
+
+        <!-- JUnit 5 -->
+        <junit.version>5.12.2</junit.version>
+        <junit.platform.version>1.12.2</junit.platform.version>
+
+        <!-- Maven -->
+        <surefire.version>3.5.2</surefire.version>
+
+        <!-- JaCoCo -->
+        <jacoco.version>0.8.13</jacoco.version>
+
+        <!-- Allure -->
+        <allure.version>2.35.3</allure.version>
+        <allure.report.version>2.39.0</allure.report.version>
+        <allure.maven.version>3.0.2</allure.maven.version>
     </properties>
 
     <dependencies>
 
-        <!-- JUnit 5 for automated testing -->
+        <!-- JUnit 5 -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.12.2</version>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Align JUnit Platform Launcher with JUnit 5.12.2 -->
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-launcher</artifactId>
+            <version>${junit.platform.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Allure JUnit 5 -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-jupiter</artifactId>
+            <version>${allure.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -34,25 +67,30 @@
     <build>
         <plugins>
 
-            <!-- Run JUnit 5 tests with Maven -->
+            <!-- Maven Surefire -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.5.2</version>
+                <version>${surefire.version}</version>
             </plugin>
-            
-            <!-- JaCoCo code coverage -->
+
+            <!-- JaCoCo -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.13</version>
+                <version>${jacoco.version}</version>
+
                 <executions>
+
+                    <!-- Attach JaCoCo agent -->
                     <execution>
+                        <id>prepare-agent</id>
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
                     </execution>
 
+                    <!-- Generate JaCoCo report -->
                     <execution>
                         <id>report</id>
                         <phase>test</phase>
@@ -60,9 +98,36 @@
                             <goal>report</goal>
                         </goals>
                     </execution>
+
                 </executions>
             </plugin>
+
+            <!-- Allure Maven -->
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>${allure.maven.version}</version>
+
+                <configuration>
+                    <!-- Use Allure 2 instead of the default Allure 3 -->
+                    <reportVersion>${allure.report.version}</reportVersion>
+
+                    <!-- Raw Allure results -->
+                    <resultsDirectory>
+                        ${project.build.directory}/allure-results
+                    </resultsDirectory>
+
+                    <!-- Generated HTML report -->
+                    <reportDirectory>
+                        ${project.build.directory}/site/allure-maven-plugin
+                    </reportDirectory>
+
+                    <!-- Keep trend history between reports -->
+                    <historyEnabled>true</historyEnabled>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
-    
+
 </project>
