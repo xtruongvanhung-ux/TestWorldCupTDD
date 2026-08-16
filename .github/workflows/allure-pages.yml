@@ -26,8 +26,28 @@ jobs:
           distribution: "temurin"
           cache: maven
 
+      - name: Compile project
+        run: mvn -B clean compile
+
+      - name: Start World Cup Web Server
+        run: |
+          java -cp target/classes com.testworldcup.testworldcuptdd.web.WorldCupWebServer > webserver.log 2>&1 &
+          echo $! > webserver.pid
+
+          for i in {1..30}; do
+            if curl -fsS http://localhost:8080 > /dev/null; then
+              echo "World Cup Web Server is ready."
+              break
+            fi
+
+            echo "Waiting for World Cup Web Server..."
+            sleep 1
+          done
+
+          curl -fsS http://localhost:8080 > /dev/null
+
       - name: Run Maven tests
-        run: mvn -B clean test
+        run: mvn -B test
 
       - name: Cache Allure
         uses: actions/cache@v4
