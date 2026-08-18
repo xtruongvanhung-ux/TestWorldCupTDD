@@ -6,20 +6,21 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class ProjectSetupTest {
 
+    // TC192 - JUnit test environment is available.
     @Test
     void junitShouldRun() {
         assertTrue(true);
     }
     
-    // TC-T021 - JUnit test environment is available.
+    // TC193 - JUnit test environment is available.
     @Test
-    void TC_T021_shouldRunJUnitTestEnvironment() {
+    void TC193_shouldRunJUnitTestEnvironment() {
         assertTrue(true);
     }
     
-    // TC-T022 - Project setup test class can be instantiated.
+    // TC194 - Project setup test class can be instantiated.
     @Test
-    void TC_T022_shouldCreateProjectSetupTestObject() {
+    void TC194_shouldCreateProjectSetupTestObject() {
         ProjectSetupTest test = new ProjectSetupTest();
 
         assertNotNull(test);

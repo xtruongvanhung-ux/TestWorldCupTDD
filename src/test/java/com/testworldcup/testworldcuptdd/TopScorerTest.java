@@ -9,9 +9,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class TopScorerTest {
 
-    // TC-T154 - Record a player who scores in a match.
+    // TC217 - Record a player who scores in a match.
     @Test
-    void TC_T154_shouldRecordGoalScorer() {
+    void TC217_shouldRecordGoalScorer() {
         TopScorer topScorer = new TopScorer();
 
         topScorer.recordGoal("Player A");
@@ -19,9 +19,9 @@ class TopScorerTest {
         assertEquals(1, topScorer.getGoalScorers().get("Player A"));
     }
 
-    // TC-T155 - Track scorers across multiple matches.
+    // TC218 - Track scorers across multiple matches.
     @Test
-    void TC_T155_shouldTrackGoalsAcrossMultipleMatches() {
+    void TC218_shouldTrackGoalsAcrossMultipleMatches() {
         TopScorer topScorer = new TopScorer();
 
         topScorer.recordGoal("Player A");
@@ -34,9 +34,9 @@ class TopScorerTest {
         assertEquals(1, scorers.get("Player B"));
     }
 
-    // TC-T156 - The player with the highest number of goals is the top scorer.
+    // TC219 - The player with the highest number of goals is the top scorer.
     @Test
-    void TC_T156_shouldReturnPlayerWithMostGoals() {
+    void TC219_shouldReturnPlayerWithMostGoals() {
         TopScorer topScorer = new TopScorer();
 
         topScorer.recordGoal("Player A");
@@ -49,9 +49,9 @@ class TopScorerTest {
         );
     }
 
-    // TC-T157 - A player with fewer goals is not the top scorer.
+    // TC220 - A player with fewer goals is not the top scorer.
     @Test
-    void TC_T157_shouldNotReturnPlayerWithFewerGoals() {
+    void TC220_shouldNotReturnPlayerWithFewerGoals() {
         TopScorer topScorer = new TopScorer();
 
         topScorer.recordGoal("Player A");
@@ -61,9 +61,9 @@ class TopScorerTest {
         assertFalse(topScorer.getTopScorers().contains("Player A"));
     }
 
-    // TC-T158 - Two players tied for most goals share the award.
+    // TC221 - Two players tied for most goals share the award.
     @Test
-    void TC_T158_shouldReturnTwoSharedTopScorers() {
+    void TC221_shouldReturnTwoSharedTopScorers() {
         TopScorer topScorer = new TopScorer();
 
         topScorer.recordGoal("Player A");
@@ -78,9 +78,9 @@ class TopScorerTest {
         );
     }
 
-    // TC-T159 - Multiple players tied for most goals share the award.
+    // TC222 - Multiple players tied for most goals share the award.
     @Test
-    void TC_T159_shouldReturnMultipleSharedTopScorers() {
+    void TC222_shouldReturnMultipleSharedTopScorers() {
         TopScorer topScorer = new TopScorer();
 
         topScorer.recordGoal("Player A");
@@ -95,17 +95,17 @@ class TopScorerTest {
         assertEquals(3, topScorer.getTopScorers().size());
     }
 
-    // TC-T160 - Zero recorded goals means no top scorer.
+    // TC223 - Zero recorded goals means no top scorer.
     @Test
-    void TC_T160_shouldReturnNoTopScorerWhenNoGoalsAreRecorded() {
+    void TC223_shouldReturnNoTopScorerWhenNoGoalsAreRecorded() {
         TopScorer topScorer = new TopScorer();
 
         assertTrue(topScorer.getTopScorers().isEmpty());
     }
 
-    // TC-T161 - One recorded goal creates a top scorer.
+    // TC224 - One recorded goal creates a top scorer.
     @Test
-    void TC_T161_shouldAcceptOneGoalAsHighestScore() {
+    void TC224_shouldAcceptOneGoalAsHighestScore() {
         TopScorer topScorer = new TopScorer();
 
         topScorer.recordGoal("Player A");
@@ -116,9 +116,9 @@ class TopScorerTest {
         );
     }
 
-    // TC-T162 - The player with the highest goal count is identified.
+    // TC225 - The player with the highest goal count is identified.
     @Test
-    void TC_T162_shouldIdentifyHighestGoalCount() {
+    void TC225_shouldIdentifyHighestGoalCount() {
         TopScorer topScorer = new TopScorer();
 
         topScorer.recordGoal("Player A");
@@ -128,9 +128,9 @@ class TopScorerTest {
         assertTrue(topScorer.getTopScorers().contains("Player B"));
     }
 
-    // TC-T163 - Players with equal highest goal counts share the award.
+    // TC226 - Players with equal highest goal counts share the award.
     @Test
-    void TC_T163_shouldIdentifySharedTopScorer() {
+    void TC226_shouldIdentifySharedTopScorer() {
         TopScorer topScorer = new TopScorer();
 
         topScorer.recordGoal("Player A");
@@ -140,9 +140,9 @@ class TopScorerTest {
         assertTrue(topScorer.isSharedTopScorer("Player B"));
     }
     
-    // TC-T164 - A single top scorer does not create a shared award.
+    // TC227 - A single top scorer does not create a shared award.
     @Test
-    void TC_T164_shouldReturnFalseWhenThereIsOnlyOneTopScorer() {
+    void TC227_shouldReturnFalseWhenThereIsOnlyOneTopScorer() {
         TopScorer topScorer = new TopScorer();
 
         topScorer.recordGoal("Player A");
@@ -151,9 +151,9 @@ class TopScorerTest {
         assertFalse(topScorer.isSharedTopScorer("Player A"));
     }
 
-    // TC-T165 - A non-top player does not share the award.
+    // TC228 - A non-top player does not share the award.
     @Test
-    void TC_T165_shouldReturnFalseForNonTopScorer() {
+    void TC228_shouldReturnFalseForNonTopScorer() {
         TopScorer topScorer = new TopScorer();
 
         topScorer.recordGoal("Player A");
@@ -165,9 +165,9 @@ class TopScorerTest {
         assertFalse(topScorer.isSharedTopScorer("Player C"));
     }
     
-    // TC-T237 - Three goals by one player are accumulated.
+    // TC229 - Three goals by one player are accumulated.
     @Test
-    void TC_T237_shouldAccumulateThreeGoalsForOnePlayer() {
+    void TC229_shouldAccumulateThreeGoalsForOnePlayer() {
         TopScorer topScorer = new TopScorer();
 
         topScorer.recordGoal("Player A");
@@ -180,9 +180,9 @@ class TopScorerTest {
         );
     }
 
-    // TC-T238 - A player with three goals leads a player with two goals.
+    // TC230 - A player with three goals leads a player with two goals.
     @Test
-    void TC_T238_shouldReturnPlayerWithThreeGoalsAsTopScorer() {
+    void TC230_shouldReturnPlayerWithThreeGoalsAsTopScorer() {
         TopScorer topScorer = new TopScorer();
 
         topScorer.recordGoal("Player A");
@@ -198,9 +198,9 @@ class TopScorerTest {
         );
     }
 
-    // TC-T239 - One player leads among three players.
+    // TC231 - One player leads among three players.
     @Test
-    void TC_T239_shouldIdentifySingleLeaderAmongThreePlayers() {
+    void TC231_shouldIdentifySingleLeaderAmongThreePlayers() {
         TopScorer topScorer = new TopScorer();
 
         topScorer.recordGoal("Player A");
@@ -214,9 +214,9 @@ class TopScorerTest {
         assertTrue(topScorer.getTopScorers().contains("Player A"));
     }
 
-    // TC-T240 - A trailing player becomes a shared top scorer after catching up.
+    // TC232 - A trailing player becomes a shared top scorer after catching up.
     @Test
-    void TC_T240_shouldCreateSharedTopScorerAfterPlayerCatchesUp() {
+    void TC232_shouldCreateSharedTopScorerAfterPlayerCatchesUp() {
         TopScorer topScorer = new TopScorer();
 
         topScorer.recordGoal("Player A");
@@ -231,9 +231,9 @@ class TopScorerTest {
         );
     }
 
-    // TC-T241 - An additional goal changes the top scorer.
+    // TC233 - An additional goal changes the top scorer.
     @Test
-    void TC_T241_shouldUpdateTopScorerAfterAdditionalGoal() {
+    void TC233_shouldUpdateTopScorerAfterAdditionalGoal() {
         TopScorer topScorer = new TopScorer();
 
         topScorer.recordGoal("Player A");
@@ -247,9 +247,9 @@ class TopScorerTest {
         );
     }
 
-    // TC-T242 - No goals means there is no shared top scorer.
+    // TC234 - No goals means there is no shared top scorer.
     @Test
-    void TC_T242_shouldNotHaveSharedTopScorerWhenNoGoalsExist() {
+    void TC234_shouldNotHaveSharedTopScorerWhenNoGoalsExist() {
         TopScorer topScorer = new TopScorer();
 
         assertFalse(
@@ -257,9 +257,9 @@ class TopScorerTest {
         );
     }
 
-    // TC-T243 - Three players with equal highest scores share the award.
+    // TC235 - Three players with equal highest scores share the award.
     @Test
-    void TC_T243_shouldIdentifyThreeSharedTopScorers() {
+    void TC235_shouldIdentifyThreeSharedTopScorers() {
         TopScorer topScorer = new TopScorer();
 
         topScorer.recordGoal("Player A");

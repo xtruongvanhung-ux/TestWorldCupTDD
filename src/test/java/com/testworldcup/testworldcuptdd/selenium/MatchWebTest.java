@@ -1,4 +1,5 @@
 package com.testworldcup.testworldcuptdd.selenium;
+
 import java.time.Duration;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -25,28 +26,28 @@ public class MatchWebTest {
     @BeforeAll
     static void setUp() {
 
-    ChromeOptions options = new ChromeOptions();
-    options.addArguments("--headless=new");
-    options.addArguments("--no-sandbox");
-    options.addArguments("--disable-dev-shm-usage");
-    options.addArguments("--disable-gpu");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless=new");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--disable-gpu");
 
-    driver = new ChromeDriver(options);
-    
+        driver = new ChromeDriver(options);
+
         driver.manage().window().maximize();
 
         wait = new WebDriverWait(
                 driver,
                 Duration.ofSeconds(10)
-);
+        );
 
-driver.get(BASE_URL);
+        driver.get(BASE_URL);
     }
 
-    // TC_WEB_001
+    // TC252
     // Match duration = 90 minutes -> VALID
     @Test
-    void TC_WEB_001_validMatchDuration90Minutes() {
+    void TC252_validMatchDuration90Minutes() {
 
         driver.get(BASE_URL);
 
@@ -61,11 +62,11 @@ driver.get(BASE_URL);
         ).click();
 
         String result =
-        wait.until(
-                ExpectedConditions.visibilityOfElementLocated(
-                        By.id("result")
-                )
-        ).getText();
+                wait.until(
+                        ExpectedConditions.visibilityOfElementLocated(
+                                By.id("result")
+                        )
+                ).getText();
 
         assertEquals(
                 "VALID: Match duration is 90 minutes.",
@@ -73,10 +74,10 @@ driver.get(BASE_URL);
         );
     }
 
-    // TC_WEB_002
+    // TC253
     // Match duration = 89 minutes -> INVALID
     @Test
-    void TC_WEB_002_invalidMatchDuration89Minutes() {
+    void TC253_invalidMatchDuration89Minutes() {
 
         driver.get(BASE_URL);
 
@@ -91,11 +92,11 @@ driver.get(BASE_URL);
         ).click();
 
         String result =
-        wait.until(
-                ExpectedConditions.visibilityOfElementLocated(
-                        By.id("result")
-                )
-        ).getText();
+                wait.until(
+                        ExpectedConditions.visibilityOfElementLocated(
+                                By.id("result")
+                        )
+                ).getText();
 
         assertEquals(
                 "INVALID: Match duration must be 90 minutes.",
@@ -103,10 +104,10 @@ driver.get(BASE_URL);
         );
     }
 
-    // TC_WEB_003
+    // TC254
     // Match duration = 91 minutes -> INVALID
     @Test
-    void TC_WEB_003_invalidMatchDuration91Minutes() {
+    void TC254_invalidMatchDuration91Minutes() {
 
         driver.get(BASE_URL);
 
@@ -121,11 +122,11 @@ driver.get(BASE_URL);
         ).click();
 
         String result =
-        wait.until(
-                ExpectedConditions.visibilityOfElementLocated(
-                        By.id("result")
-                )
-        ).getText();
+                wait.until(
+                        ExpectedConditions.visibilityOfElementLocated(
+                                By.id("result")
+                        )
+                ).getText();
 
         assertEquals(
                 "INVALID: Match duration must be 90 minutes.",
@@ -133,10 +134,10 @@ driver.get(BASE_URL);
         );
     }
 
-    // TC_WEB_004
+    // TC255
     // Verify homepage UI elements
     @Test
-    void TC_WEB_004_verifyMatchRulePage() {
+    void TC255_verifyMatchRulePage() {
 
         driver.get(BASE_URL);
 
@@ -162,10 +163,10 @@ driver.get(BASE_URL);
         );
     }
 
-    // TC_WEB_005
+    // TC256
     // Empty input -> browser validation is triggered
     @Test
-    void TC_WEB_005_emptyMatchDuration() {
+    void TC256_emptyMatchDuration() {
 
         driver.get(BASE_URL);
 
@@ -188,11 +189,11 @@ driver.get(BASE_URL);
                 driver.getCurrentUrl()
         );
     }
-    
-    // TC_WEB_006
+
+    // TC257
     // Invalid numeric input -> INVALID
     @Test
-    void TC_WEB_006_invalidNumericInput() {
+    void TC257_invalidNumericInput() {
 
         driver.get(BASE_URL);
 
@@ -211,7 +212,6 @@ driver.get(BASE_URL);
     }
 
     @AfterAll
-    
     static void tearDown() {
 
         if (driver != null) {

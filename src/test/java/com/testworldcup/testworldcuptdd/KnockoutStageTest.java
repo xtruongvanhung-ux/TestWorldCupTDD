@@ -6,25 +6,25 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class KnockoutStageTest {
 
-    // TC-T104 - Round of 16 has 16 teams.
+    // TC59 - Round of 16 has 16 teams.
     @Test
-    void TC_T104_shouldAccept16TeamsInRoundOf16() {
+    void TC59_shouldAccept16TeamsInRoundOf16() {
         KnockoutStage stage = new KnockoutStage();
 
         assertTrue(stage.isRoundOf16TeamCountValid(16));
     }
 
-    // TC-T105 - Round of 16 cannot have a team count different from 16.
+    // TC60 - Round of 16 cannot have a team count different from 16.
     @Test
-    void TC_T105_shouldRejectInvalidRoundOf16TeamCount() {
+    void TC60_shouldRejectInvalidRoundOf16TeamCount() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isRoundOf16TeamCountValid(15));
     }
 
-    // TC-T106 - Match 1 is First A versus Second B.
+    // TC61 - Match 1 is First A versus Second B.
     @Test
-    void TC_T106_shouldAcceptMatch1Pairing() {
+    void TC61_shouldAcceptMatch1Pairing() {
         KnockoutStage stage = new KnockoutStage();
 
         assertTrue(stage.isMatch1PairingValid(
@@ -33,9 +33,9 @@ class KnockoutStageTest {
         ));
     }
 
-    // TC-T107 - Match 2 is First B versus Second A.
+    // TC62 - Match 2 is First B versus Second A.
     @Test
-    void TC_T107_shouldAcceptMatch2Pairing() {
+    void TC62_shouldAcceptMatch2Pairing() {
         KnockoutStage stage = new KnockoutStage();
 
         assertTrue(stage.isMatch2PairingValid(
@@ -44,9 +44,9 @@ class KnockoutStageTest {
         ));
     }
 
-    // TC-T108 - Match 3 is First C versus Second D.
+    // TC63 - Match 3 is First C versus Second D.
     @Test
-    void TC_T108_shouldAcceptMatch3Pairing() {
+    void TC63_shouldAcceptMatch3Pairing() {
         KnockoutStage stage = new KnockoutStage();
 
         assertTrue(stage.isMatch3PairingValid(
@@ -55,9 +55,9 @@ class KnockoutStageTest {
         ));
     }
 
-    // TC-T109 - Match 4 is First D versus Second C.
+    // TC64 - Match 4 is First D versus Second C.
     @Test
-    void TC_T109_shouldAcceptMatch4Pairing() {
+    void TC64_shouldAcceptMatch4Pairing() {
         KnockoutStage stage = new KnockoutStage();
 
         assertTrue(stage.isMatch4PairingValid(
@@ -66,9 +66,9 @@ class KnockoutStageTest {
         ));
     }
 
-    // TC-T110 - Match 5 is First E versus Second F.
+    // TC65 - Match 5 is First E versus Second F.
     @Test
-    void TC_T110_shouldAcceptMatch5Pairing() {
+    void TC65_shouldAcceptMatch5Pairing() {
         KnockoutStage stage = new KnockoutStage();
 
         assertTrue(stage.isMatch5PairingValid(
@@ -77,9 +77,9 @@ class KnockoutStageTest {
         ));
     }
 
-    // TC-T111 - Match 6 is First F versus Second E.
+    // TC66 - Match 6 is First F versus Second E.
     @Test
-    void TC_T111_shouldAcceptMatch6Pairing() {
+    void TC66_shouldAcceptMatch6Pairing() {
         KnockoutStage stage = new KnockoutStage();
 
         assertTrue(stage.isMatch6PairingValid(
@@ -88,9 +88,9 @@ class KnockoutStageTest {
         ));
     }
 
-    // TC-T112 - Match 7 is First G versus Second H.
+    // TC67 - Match 7 is First G versus Second H.
     @Test
-    void TC_T112_shouldAcceptMatch7Pairing() {
+    void TC67_shouldAcceptMatch7Pairing() {
         KnockoutStage stage = new KnockoutStage();
 
         assertTrue(stage.isMatch7PairingValid(
@@ -99,9 +99,9 @@ class KnockoutStageTest {
         ));
     }
 
-    // TC-T113 - Match 8 is First H versus Second G.
+    // TC68 - Match 8 is First H versus Second G.
     @Test
-    void TC_T113_shouldAcceptMatch8Pairing() {
+    void TC68_shouldAcceptMatch8Pairing() {
         KnockoutStage stage = new KnockoutStage();
 
         assertTrue(stage.isMatch8PairingValid(
@@ -110,441 +110,441 @@ class KnockoutStageTest {
         ));
     }
 
-    // TC-T114 - 8 winners of the round of 16 advance.
+    // TC69 - 8 winners of the round of 16 advance.
     @Test
-    void TC_T114_shouldAcceptEightRoundOf16Winners() {
+    void TC69_shouldAcceptEightRoundOf16Winners() {
         KnockoutStage stage = new KnockoutStage();
 
         assertTrue(stage.isQuarterfinalWinnerCountValid(8));
     }
 
-    // TC-T115 - Quarterfinals contain 4 matches.
+    // TC70 - Quarterfinals contain 4 matches.
     @Test
-    void TC_T115_shouldAcceptFourQuarterfinalMatches() {
+    void TC70_shouldAcceptFourQuarterfinalMatches() {
         KnockoutStage stage = new KnockoutStage();
 
         assertTrue(stage.isQuarterfinalMatchCountValid(4));
     }
 
-    // TC-T116 - 4 quarterfinal winners advance to semifinals.
+    // TC71 - 4 quarterfinal winners advance to semifinals.
     @Test
-    void TC_T116_shouldAcceptFourSemifinalists() {
+    void TC71_shouldAcceptFourSemifinalists() {
         KnockoutStage stage = new KnockoutStage();
 
         assertTrue(stage.isSemifinalistCountValid(4));
     }
 
-    // TC-T117 - Semifinals contain 2 matches.
+    // TC72 - Semifinals contain 2 matches.
     @Test
-    void TC_T117_shouldAcceptTwoSemifinalMatches() {
+    void TC72_shouldAcceptTwoSemifinalMatches() {
         KnockoutStage stage = new KnockoutStage();
 
         assertTrue(stage.isSemifinalMatchCountValid(2));
     }
 
-    // TC-T118 - 2 semifinal winners advance to the final.
+    // TC73 - 2 semifinal winners advance to the final.
     @Test
-    void TC_T118_shouldAcceptTwoFinalists() {
+    void TC73_shouldAcceptTwoFinalists() {
         KnockoutStage stage = new KnockoutStage();
 
         assertTrue(stage.isFinalistCountValid(2));
     }
 
-    // TC-T119 - Final winner receives gold medal.
+    // TC74 - Final winner receives gold medal.
     @Test
-    void TC_T119_shouldGiveGoldMedalToWinner() {
+    void TC74_shouldGiveGoldMedalToWinner() {
         KnockoutStage stage = new KnockoutStage();
 
         assertTrue(stage.winnerReceivesGoldMedal(true));
     }
 
-    // TC-T120 - Final loser receives silver medal.
+    // TC75 - Final loser receives silver medal.
     @Test
-    void TC_T120_shouldGiveSilverMedalToLoser() {
+    void TC75_shouldGiveSilverMedalToLoser() {
         KnockoutStage stage = new KnockoutStage();
 
         assertTrue(stage.loserReceivesSilverMedal(true));
     }
 
-    // TC-T121 - Two semifinal losers receive bronze medals.
+    // TC76 - Two semifinal losers receive bronze medals.
     @Test
-    void TC_T121_shouldGiveBronzeMedalsToTwoSemifinalLosers() {
+    void TC76_shouldGiveBronzeMedalsToTwoSemifinalLosers() {
         KnockoutStage stage = new KnockoutStage();
 
         assertTrue(stage.semifinalLosersReceiveBronzeMedals(2));
     }
 
-    // TC-T122 - 15 teams are below the round of 16 boundary.
+    // TC77 - 15 teams are below the round of 16 boundary.
     @Test
-    void TC_T122_shouldReject15Teams() {
+    void TC77_shouldReject15Teams() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isRoundOf16TeamCountValid(15));
     }
 
-    // TC-T123 - 16 teams meet the round of 16 boundary.
+    // TC78 - 16 teams meet the round of 16 boundary.
     @Test
-    void TC_T123_shouldAccept16TeamsAtBoundary() {
+    void TC78_shouldAccept16TeamsAtBoundary() {
         KnockoutStage stage = new KnockoutStage();
 
         assertTrue(stage.isRoundOf16TeamCountValid(16));
     }
 
-    // TC-T124 - 17 teams exceed the round of 16 boundary.
+    // TC79 - 17 teams exceed the round of 16 boundary.
     @Test
-    void TC_T124_shouldReject17Teams() {
+    void TC79_shouldReject17Teams() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isRoundOf16TeamCountValid(17));
     }
 
-    // TC-T125 - 7 winners are below the quarterfinal boundary.
+    // TC80 - 7 winners are below the quarterfinal boundary.
     @Test
-    void TC_T125_shouldRejectSevenQuarterfinalWinners() {
+    void TC80_shouldRejectSevenQuarterfinalWinners() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isQuarterfinalWinnerCountValid(7));
     }
 
-    // TC-T126 - 8 winners meet the quarterfinal boundary.
+    // TC81 - 8 winners meet the quarterfinal boundary.
     @Test
-    void TC_T126_shouldAcceptEightQuarterfinalWinnersAtBoundary() {
+    void TC81_shouldAcceptEightQuarterfinalWinnersAtBoundary() {
         KnockoutStage stage = new KnockoutStage();
 
         assertTrue(stage.isQuarterfinalWinnerCountValid(8));
     }
 
-    // TC-T127 - 9 winners exceed the quarterfinal boundary.
+    // TC82 - 9 winners exceed the quarterfinal boundary.
     @Test
-    void TC_T127_shouldRejectNineQuarterfinalWinners() {
+    void TC82_shouldRejectNineQuarterfinalWinners() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isQuarterfinalWinnerCountValid(9));
     }
 
-    // TC-T128 - 3 quarterfinal matches are below the boundary.
+    // TC83 - 3 quarterfinal matches are below the boundary.
     @Test
-    void TC_T128_shouldRejectThreeQuarterfinalMatches() {
+    void TC83_shouldRejectThreeQuarterfinalMatches() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isQuarterfinalMatchCountValid(3));
     }
 
-    // TC-T129 - 4 quarterfinal matches meet the boundary.
+    // TC84 - 4 quarterfinal matches meet the boundary.
     @Test
-    void TC_T129_shouldAcceptFourQuarterfinalMatchesAtBoundary() {
+    void TC84_shouldAcceptFourQuarterfinalMatchesAtBoundary() {
         KnockoutStage stage = new KnockoutStage();
 
         assertTrue(stage.isQuarterfinalMatchCountValid(4));
     }
 
-    // TC-T130 - 5 quarterfinal matches exceed the boundary.
+    // TC85 - 5 quarterfinal matches exceed the boundary.
     @Test
-    void TC_T130_shouldRejectFiveQuarterfinalMatches() {
+    void TC85_shouldRejectFiveQuarterfinalMatches() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isQuarterfinalMatchCountValid(5));
     }
 
-    // TC-T131 - 3 semifinalists are below the boundary.
+    // TC86 - 3 semifinalists are below the boundary.
     @Test
-    void TC_T131_shouldRejectThreeSemifinalists() {
+    void TC86_shouldRejectThreeSemifinalists() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isSemifinalistCountValid(3));
     }
 
-    // TC-T132 - 4 semifinalists meet the boundary.
+    // TC87 - 4 semifinalists meet the boundary.
     @Test
-    void TC_T132_shouldAcceptFourSemifinalistsAtBoundary() {
+    void TC87_shouldAcceptFourSemifinalistsAtBoundary() {
         KnockoutStage stage = new KnockoutStage();
 
         assertTrue(stage.isSemifinalistCountValid(4));
     }
 
-    // TC-T133 - 5 semifinalists exceed the boundary.
+    // TC88 - 5 semifinalists exceed the boundary.
     @Test
-    void TC_T133_shouldRejectFiveSemifinalists() {
+    void TC88_shouldRejectFiveSemifinalists() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isSemifinalistCountValid(5));
     }
-    
-    // TC-T134 - Match 1 rejects an incorrect home team.
+
+    // TC89 - Match 1 rejects an incorrect home team.
     @Test
-    void TC_T134_shouldRejectWrongHomeTeamMatch1() {
+    void TC89_shouldRejectWrongHomeTeamMatch1() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isMatch1PairingValid("First B", "Second B"));
     }
 
-    // TC-T135 - Match 1 rejects an incorrect away team.
+    // TC90 - Match 1 rejects an incorrect away team.
     @Test
-    void TC_T135_shouldRejectWrongAwayTeamMatch1() {
+    void TC90_shouldRejectWrongAwayTeamMatch1() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isMatch1PairingValid("First A", "Second A"));
     }
 
-    // TC-T136 - Match 2 rejects an incorrect home team.
+    // TC91 - Match 2 rejects an incorrect home team.
     @Test
-    void TC_T136_shouldRejectWrongHomeTeamMatch2() {
+    void TC91_shouldRejectWrongHomeTeamMatch2() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isMatch2PairingValid("First A", "Second A"));
     }
 
-    // TC-T137 - Match 2 rejects an incorrect away team.
+    // TC92 - Match 2 rejects an incorrect away team.
     @Test
-    void TC_T137_shouldRejectWrongAwayTeamMatch2() {
+    void TC92_shouldRejectWrongAwayTeamMatch2() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isMatch2PairingValid("First B", "Second B"));
     }
 
-    // TC-T138 - Match 3 rejects an incorrect home team.
+    // TC93 - Match 3 rejects an incorrect home team.
     @Test
-    void TC_T138_shouldRejectWrongHomeTeamMatch3() {
+    void TC93_shouldRejectWrongHomeTeamMatch3() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isMatch3PairingValid("First D", "Second D"));
     }
 
-    // TC-T139 - Match 3 rejects an incorrect away team.
+    // TC94 - Match 3 rejects an incorrect away team.
     @Test
-    void TC_T139_shouldRejectWrongAwayTeamMatch3() {
+    void TC94_shouldRejectWrongAwayTeamMatch3() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isMatch3PairingValid("First C", "Second C"));
     }
 
-    // TC-T140 - Match 4 rejects an incorrect home team.
+    // TC95 - Match 4 rejects an incorrect home team.
     @Test
-    void TC_T140_shouldRejectWrongHomeTeamMatch4() {
+    void TC95_shouldRejectWrongHomeTeamMatch4() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isMatch4PairingValid("First C", "Second C"));
     }
 
-    // TC-T141 - Match 4 rejects an incorrect away team.
+    // TC96 - Match 4 rejects an incorrect away team.
     @Test
-    void TC_T141_shouldRejectWrongAwayTeamMatch4() {
+    void TC96_shouldRejectWrongAwayTeamMatch4() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isMatch4PairingValid("First D", "Second D"));
     }
 
-    // TC-T142 - Match 5 rejects an incorrect home team.
+    // TC97 - Match 5 rejects an incorrect home team.
     @Test
-    void TC_T142_shouldRejectWrongHomeTeamMatch5() {
+    void TC97_shouldRejectWrongHomeTeamMatch5() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isMatch5PairingValid("First F", "Second F"));
     }
 
-    // TC-T143 - Match 5 rejects an incorrect away team.
+    // TC98 - Match 5 rejects an incorrect away team.
     @Test
-    void TC_T143_shouldRejectWrongAwayTeamMatch5() {
+    void TC98_shouldRejectWrongAwayTeamMatch5() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isMatch5PairingValid("First E", "Second E"));
     }
 
-    // TC-T144 - Match 6 rejects an incorrect home team.
+    // TC99 - Match 6 rejects an incorrect home team.
     @Test
-    void TC_T144_shouldRejectWrongHomeTeamMatch6() {
+    void TC99_shouldRejectWrongHomeTeamMatch6() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isMatch6PairingValid("First E", "Second E"));
     }
 
-    // TC-T145 - Match 6 rejects an incorrect away team.
+    // TC100 - Match 6 rejects an incorrect away team.
     @Test
-    void TC_T145_shouldRejectWrongAwayTeamMatch6() {
+    void TC100_shouldRejectWrongAwayTeamMatch6() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isMatch6PairingValid("First F", "Second F"));
     }
 
-    // TC-T146 - Match 7 rejects an incorrect home team.
+    // TC101 - Match 7 rejects an incorrect home team.
     @Test
-    void TC_T146_shouldRejectWrongHomeTeamMatch7() {
+    void TC101_shouldRejectWrongHomeTeamMatch7() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isMatch7PairingValid("First H", "Second H"));
     }
 
-    // TC-T147 - Match 7 rejects an incorrect away team.
+    // TC102 - Match 7 rejects an incorrect away team.
     @Test
-    void TC_T147_shouldRejectWrongAwayTeamMatch7() {
+    void TC102_shouldRejectWrongAwayTeamMatch7() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isMatch7PairingValid("First G", "Second G"));
     }
 
-    // TC-T148 - Match 8 rejects an incorrect home team.
+    // TC103 - Match 8 rejects an incorrect home team.
     @Test
-    void TC_T148_shouldRejectWrongHomeTeamMatch8() {
+    void TC103_shouldRejectWrongHomeTeamMatch8() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isMatch8PairingValid("First G", "Second G"));
     }
 
-    // TC-T149 - Match 8 rejects an incorrect away team.
+    // TC104 - Match 8 rejects an incorrect away team.
     @Test
-    void TC_T149_shouldRejectWrongAwayTeamMatch8() {
+    void TC104_shouldRejectWrongAwayTeamMatch8() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isMatch8PairingValid("First H", "Second H"));
     }
 
-    // TC-T150 - Five semifinalists are invalid.
+    // TC105 - Five semifinalists are invalid.
     @Test
-    void TC_T150_shouldRejectFiveSemifinalists() {
+    void TC105_shouldRejectFiveSemifinalists() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isSemifinalistCountValid(5));
     }
 
-    // TC-T151 - Three finalists are invalid.
+    // TC106 - Three finalists are invalid.
     @Test
-    void TC_T151_shouldRejectThreeFinalists() {
+    void TC106_shouldRejectThreeFinalists() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isFinalistCountValid(3));
     }
 
-    // TC-T152 - Three semifinal losers are invalid.
+    // TC107 - Three semifinal losers are invalid.
     @Test
-    void TC_T152_shouldRejectThreeSemifinalLosers() {
+    void TC107_shouldRejectThreeSemifinalLosers() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.semifinalLosersReceiveBronzeMedals(3));
     }
-    
-    // TC-T153 - Three semifinal matches are invalid.
+
+    // TC108 - Three semifinal matches are invalid.
     @Test
-    void TC_T153_shouldRejectThreeSemifinalMatches() {
+    void TC108_shouldRejectThreeSemifinalMatches() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isSemifinalMatchCountValid(3));
     }
-    
-    // TC-T217 - Zero teams cannot form the round of 16.
+
+    // TC109 - Zero teams cannot form the round of 16.
     @Test
-    void TC_T217_shouldRejectZeroTeamsInRoundOf16() {
+    void TC109_shouldRejectZeroTeamsInRoundOf16() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isRoundOf16TeamCountValid(0));
     }
 
-    // TC-T218 - A negative team count is invalid for the round of 16.
+    // TC110 - A negative team count is invalid for the round of 16.
     @Test
-    void TC_T218_shouldRejectNegativeRoundOf16TeamCount() {
+    void TC110_shouldRejectNegativeRoundOf16TeamCount() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isRoundOf16TeamCountValid(-1));
     }
 
-    // TC-T219 - Zero quarterfinal winners are invalid.
+    // TC111 - Zero quarterfinal winners are invalid.
     @Test
-    void TC_T219_shouldRejectZeroQuarterfinalWinners() {
+    void TC111_shouldRejectZeroQuarterfinalWinners() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isQuarterfinalWinnerCountValid(0));
     }
 
-    // TC-T220 - Six quarterfinal winners are invalid.
+    // TC112 - Six quarterfinal winners are invalid.
     @Test
-    void TC_T220_shouldRejectSixQuarterfinalWinners() {
+    void TC112_shouldRejectSixQuarterfinalWinners() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isQuarterfinalWinnerCountValid(6));
     }
 
-    // TC-T221 - Ten quarterfinal winners are invalid.
+    // TC113 - Ten quarterfinal winners are invalid.
     @Test
-    void TC_T221_shouldRejectTenQuarterfinalWinners() {
+    void TC113_shouldRejectTenQuarterfinalWinners() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isQuarterfinalWinnerCountValid(10));
     }
 
-    // TC-T222 - Zero quarterfinal matches are invalid.
+    // TC114 - Zero quarterfinal matches are invalid.
     @Test
-    void TC_T222_shouldRejectZeroQuarterfinalMatches() {
+    void TC114_shouldRejectZeroQuarterfinalMatches() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isQuarterfinalMatchCountValid(0));
     }
 
-    // TC-T223 - Six quarterfinal matches are invalid.
+    // TC115 - Six quarterfinal matches are invalid.
     @Test
-    void TC_T223_shouldRejectSixQuarterfinalMatches() {
+    void TC115_shouldRejectSixQuarterfinalMatches() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isQuarterfinalMatchCountValid(6));
     }
 
-    // TC-T224 - Zero semifinalists are invalid.
+    // TC116 - Zero semifinalists are invalid.
     @Test
-    void TC_T224_shouldRejectZeroSemifinalists() {
+    void TC116_shouldRejectZeroSemifinalists() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isSemifinalistCountValid(0));
     }
 
-    // TC-T225 - One semifinalist is invalid.
+    // TC117 - One semifinalist is invalid.
     @Test
-    void TC_T225_shouldRejectOneSemifinalist() {
+    void TC117_shouldRejectOneSemifinalist() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isSemifinalistCountValid(1));
     }
 
-    // TC-T226 - Six semifinalists are invalid.
+    // TC118 - Six semifinalists are invalid.
     @Test
-    void TC_T226_shouldRejectSixSemifinalists() {
+    void TC118_shouldRejectSixSemifinalists() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isSemifinalistCountValid(6));
     }
 
-    // TC-T227 - Zero semifinal matches are invalid.
+    // TC119 - Zero semifinal matches are invalid.
     @Test
-    void TC_T227_shouldRejectZeroSemifinalMatches() {
+    void TC119_shouldRejectZeroSemifinalMatches() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isSemifinalMatchCountValid(0));
     }
 
-    // TC-T228 - One semifinal match is invalid.
+    // TC120 - One semifinal match is invalid.
     @Test
-    void TC_T228_shouldRejectOneSemifinalMatch() {
+    void TC120_shouldRejectOneSemifinalMatch() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isSemifinalMatchCountValid(1));
     }
 
-    // TC-T229 - Zero finalists are invalid.
+    // TC121 - Zero finalists are invalid.
     @Test
-    void TC_T229_shouldRejectZeroFinalists() {
+    void TC121_shouldRejectZeroFinalists() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isFinalistCountValid(0));
     }
 
-    // TC-T230 - One finalist is invalid.
+    // TC122 - One finalist is invalid.
     @Test
-    void TC_T230_shouldRejectOneFinalist() {
+    void TC122_shouldRejectOneFinalist() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isFinalistCountValid(1));
     }
 
-    // TC-T231 - Four finalists are invalid.
+    // TC123 - Four finalists are invalid.
     @Test
-    void TC_T231_shouldRejectFourFinalists() {
+    void TC123_shouldRejectFourFinalists() {
         KnockoutStage stage = new KnockoutStage();
 
         assertFalse(stage.isFinalistCountValid(4));

@@ -6,9 +6,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class TeamTest {
 
-    // TC-T001 - Team has a valid country name.
+    // TC195 - Team has a valid country name.
     @Test
-    void TC_T001_shouldAcceptCountryName() {
+    void TC195_shouldAcceptCountryName() {
         Team team = new Team();
 
         team.setCountryName("Vietnam");
@@ -16,9 +16,9 @@ class TeamTest {
         assertEquals("Vietnam", team.getCountryName());
     }
 
-    // TC-T002 - Team has one head coach.
+    // TC196 - Team has one head coach.
     @Test
-    void TC_T002_shouldAcceptOneHeadCoach() {
+    void TC196_shouldAcceptOneHeadCoach() {
         Team team = new Team();
 
         team.setHeadCoach("Coach 1");
@@ -26,9 +26,9 @@ class TeamTest {
         assertEquals("Coach 1", team.getHeadCoach());
     }
 
-    // TC-T003 - Team has 3 assistant coaches.
+    // TC197 - Team has 3 assistant coaches.
     @Test
-    void TC_T003_shouldAcceptThreeAssistantCoaches() {
+    void TC197_shouldAcceptThreeAssistantCoaches() {
         Team team = new Team();
 
         for (int i = 1; i <= 3; i++) {
@@ -38,9 +38,9 @@ class TeamTest {
         assertTrue(team.isAssistantCoachCountValid());
     }
 
-    // TC-T004 - Team has 4 assistant coaches.
+    // TC198 - Team has 4 assistant coaches.
     @Test
-    void TC_T004_shouldRejectFourAssistantCoaches() {
+    void TC198_shouldRejectFourAssistantCoaches() {
         Team team = new Team();
 
         for (int i = 1; i <= 4; i++) {
@@ -50,9 +50,9 @@ class TeamTest {
         assertFalse(team.isAssistantCoachCountValid());
     }
 
-    // TC-T005 - Team has 2 assistant coaches.
+    // TC199 - Team has 2 assistant coaches.
     @Test
-    void TC_T005_shouldAcceptTwoAssistantCoaches() {
+    void TC199_shouldAcceptTwoAssistantCoaches() {
         Team team = new Team();
 
         for (int i = 1; i <= 2; i++) {
@@ -62,9 +62,9 @@ class TeamTest {
         assertTrue(team.isAssistantCoachCountValid());
     }
 
-    // TC-T006 - Team has 22 players.
+    // TC200 - Team has 22 players.
     @Test
-    void TC_T006_shouldAccept22Players() {
+    void TC200_shouldAccept22Players() {
         Team team = new Team();
 
         for (int i = 1; i <= 22; i++) {
@@ -74,9 +74,9 @@ class TeamTest {
         assertTrue(team.isPlayerCountValid());
     }
 
-    // TC-T007 - Team has 23 players.
+    // TC201 - Team has 23 players.
     @Test
-    void TC_T007_shouldReject23Players() {
+    void TC201_shouldReject23Players() {
         Team team = new Team();
 
         for (int i = 1; i <= 23; i++) {
@@ -86,9 +86,9 @@ class TeamTest {
         assertFalse(team.isPlayerCountValid());
     }
 
-    // TC-T008 - Team has 21 players.
+    // TC202 - Team has 21 players.
     @Test
-    void TC_T008_shouldAccept21Players() {
+    void TC202_shouldAccept21Players() {
         Team team = new Team();
 
         for (int i = 1; i <= 21; i++) {
@@ -98,9 +98,9 @@ class TeamTest {
         assertTrue(team.isPlayerCountValid());
     }
 
-    // TC-T009 - Official lineup has 7 players.
+    // TC203 - Official lineup has 7 players.
     @Test
-    void TC_T009_shouldAcceptSevenStartingPlayers() {
+    void TC203_shouldAcceptSevenStartingPlayers() {
         Team team = new Team();
 
         for (int i = 1; i <= 7; i++) {
@@ -110,9 +110,9 @@ class TeamTest {
         assertTrue(team.isStartingPlayerCountValid());
     }
 
-    // TC-T010 - Official lineup has 11 players.
+    // TC204 - Official lineup has 11 players.
     @Test
-    void TC_T010_shouldAcceptElevenStartingPlayers() {
+    void TC204_shouldAcceptElevenStartingPlayers() {
         Team team = new Team();
 
         for (int i = 1; i <= 11; i++) {
@@ -122,9 +122,9 @@ class TeamTest {
         assertTrue(team.isStartingPlayerCountValid());
     }
 
-    // TC-T011 - Official lineup has 6 players.
+    // TC205 - Official lineup has 6 players.
     @Test
-    void TC_T011_shouldRejectSixStartingPlayers() {
+    void TC205_shouldRejectSixStartingPlayers() {
         Team team = new Team();
 
         for (int i = 1; i <= 6; i++) {
@@ -134,9 +134,9 @@ class TeamTest {
         assertFalse(team.isStartingPlayerCountValid());
     }
 
-    // TC-T012 - Official lineup has 12 players.
+    // TC206 - Official lineup has 12 players.
     @Test
-    void TC_T012_shouldRejectTwelveStartingPlayers() {
+    void TC206_shouldRejectTwelveStartingPlayers() {
         Team team = new Team();
 
         for (int i = 1; i <= 12; i++) {
@@ -146,9 +146,9 @@ class TeamTest {
         assertFalse(team.isStartingPlayerCountValid());
     }
 
-    // TC-T013 - Team has 5 substitutes.
+    // TC207 - Team has 5 substitutes.
     @Test
-    void TC_T013_shouldAcceptFiveSubstitutes() {
+    void TC207_shouldAcceptFiveSubstitutes() {
         Team team = new Team();
 
         for (int i = 1; i <= 5; i++) {
@@ -158,9 +158,9 @@ class TeamTest {
         assertTrue(team.isSubstituteCountValid());
     }
 
-    // TC-T014 - Team has 6 substitutes.
+    // TC208 - Team has 6 substitutes.
     @Test
-    void TC_T014_shouldRejectSixSubstitutes() {
+    void TC208_shouldRejectSixSubstitutes() {
         Team team = new Team();
 
         for (int i = 1; i <= 6; i++) {
@@ -170,9 +170,9 @@ class TeamTest {
         assertFalse(team.isSubstituteCountValid());
     }
 
-    // TC-T015 - Team has 4 substitutes.
+    // TC209 - Team has 4 substitutes.
     @Test
-    void TC_T015_shouldAcceptFourSubstitutes() {
+    void TC209_shouldAcceptFourSubstitutes() {
         Team team = new Team();
 
         for (int i = 1; i <= 4; i++) {
@@ -182,9 +182,9 @@ class TeamTest {
         assertTrue(team.isSubstituteCountValid());
     }
     
-    // TC-T016 - Get assistant coaches from team.
+    // TC210 - Get assistant coaches from team.
     @Test
-    void TC_T016_shouldReturnAssistantCoaches() {
+    void TC210_shouldReturnAssistantCoaches() {
         Team team = new Team();
 
         team.addAssistantCoach("Assistant 1");
@@ -192,9 +192,9 @@ class TeamTest {
         assertEquals(1, team.getAssistantCoaches().size());
     }
 
-    // TC-T017 - Get players from team.
+    // TC211 - Get players from team.
     @Test
-    void TC_T017_shouldReturnPlayers() {
+    void TC211_shouldReturnPlayers() {
         Team team = new Team();
 
         team.addPlayer(new Player("Player 1"));
@@ -202,9 +202,9 @@ class TeamTest {
         assertEquals(1, team.getPlayers().size());
     }
 
-    // TC-T018 - Get starting players from team.
+    // TC212 - Get starting players from team.
     @Test
-    void TC_T018_shouldReturnStartingPlayers() {
+    void TC212_shouldReturnStartingPlayers() {
         Team team = new Team();
 
         team.addStartingPlayer(new Player("Player 1"));
@@ -212,9 +212,9 @@ class TeamTest {
         assertEquals(1, team.getStartingPlayers().size());
     }
 
-    // TC-T019 - Get substitutes from team.
+    // TC213 - Get substitutes from team.
     @Test
-    void TC_T019_shouldReturnSubstitutes() {
+    void TC213_shouldReturnSubstitutes() {
         Team team = new Team();
 
         team.addSubstitute(new Player("Substitute 1"));
@@ -222,9 +222,9 @@ class TeamTest {
         assertEquals(1, team.getSubstitutes().size());
     }
     
-    // TC-T020 - Team has 1 staff/caretaker.
+    // TC214 - Team has 1 staff/caretaker.
     @Test
-    void TC_T020_shouldAcceptOneStaffMember() {
+    void TC214_shouldAcceptOneStaffMember() {
         Team team = new Team();
 
         team.setStaffMember("Staff 1");

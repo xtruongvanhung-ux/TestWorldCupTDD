@@ -6,9 +6,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class DatabaseTest {
 
-    // TC-T166 - Lưu đội bóng.
+    // TC01 - Lưu đội bóng.
     @Test
-    void TC_T166_shouldSaveTeam() {
+    void TC01_shouldSaveTeam() {
         Database database = new Database();
 
         assertTrue(
@@ -16,9 +16,9 @@ class DatabaseTest {
         );
     }
 
-    // TC-T167 - Truy xuất đội bóng đã lưu.
+    // TC02 - Truy xuất đội bóng đã lưu.
     @Test
-    void TC_T167_shouldRetrieveSavedTeam() {
+    void TC02_shouldRetrieveSavedTeam() {
         Database database = new Database();
 
         database.saveTeam("T01", "Vietnam");
@@ -29,9 +29,9 @@ class DatabaseTest {
         );
     }
 
-    // TC-T168 - Lưu bảng đấu.
+    // TC03 - Lưu bảng đấu.
     @Test
-    void TC_T168_shouldSaveGroup() {
+    void TC03_shouldSaveGroup() {
         Database database = new Database();
 
         assertTrue(
@@ -39,9 +39,9 @@ class DatabaseTest {
         );
     }
 
-    // TC-T169 - Truy xuất bảng đấu đã lưu.
+    // TC04 - Truy xuất bảng đấu đã lưu.
     @Test
-    void TC_T169_shouldRetrieveSavedGroup() {
+    void TC04_shouldRetrieveSavedGroup() {
         Database database = new Database();
 
         database.saveGroup("G01", "Group A");
@@ -52,9 +52,9 @@ class DatabaseTest {
         );
     }
 
-    // TC-T170 - Lưu trận đấu.
+    // TC05 - Lưu trận đấu.
     @Test
-    void TC_T170_shouldSaveMatch() {
+    void TC05_shouldSaveMatch() {
         Database database = new Database();
 
         assertTrue(
@@ -65,9 +65,9 @@ class DatabaseTest {
         );
     }
 
-    // TC-T171 - Truy xuất trận đấu đã lưu.
+    // TC06 - Truy xuất trận đấu đã lưu.
     @Test
-    void TC_T171_shouldRetrieveSavedMatch() {
+    void TC06_shouldRetrieveSavedMatch() {
         Database database = new Database();
 
         database.saveMatch(
@@ -81,9 +81,9 @@ class DatabaseTest {
         );
     }
 
-    // TC-T172 - Lưu cầu thủ.
+    // TC07 - Lưu cầu thủ.
     @Test
-    void TC_T172_shouldSavePlayer() {
+    void TC07_shouldSavePlayer() {
         Database database = new Database();
 
         assertTrue(
@@ -94,9 +94,9 @@ class DatabaseTest {
         );
     }
 
-    // TC-T173 - Truy xuất cầu thủ đã lưu.
+    // TC08 - Truy xuất cầu thủ đã lưu.
     @Test
-    void TC_T173_shouldRetrieveSavedPlayer() {
+    void TC08_shouldRetrieveSavedPlayer() {
         Database database = new Database();
 
         database.savePlayer(
@@ -110,9 +110,9 @@ class DatabaseTest {
         );
     }
 
-    // TC-T174 - Lưu kết quả trận đấu.
+    // TC09 - Lưu kết quả trận đấu.
     @Test
-    void TC_T174_shouldSaveMatchResult() {
+    void TC09_shouldSaveMatchResult() {
         Database database = new Database();
 
         assertTrue(
@@ -124,9 +124,9 @@ class DatabaseTest {
         );
     }
 
-    // TC-T175 - Truy xuất kết quả trận đấu đã lưu.
+    // TC10 - Truy xuất kết quả trận đấu đã lưu.
     @Test
-    void TC_T175_shouldRetrieveSavedMatchResult() {
+    void TC10_shouldRetrieveSavedMatchResult() {
         Database database = new Database();
 
         database.saveResult(
@@ -140,68 +140,75 @@ class DatabaseTest {
                 database.getResult("M01")
         );
     }
-    
-    // TC-T232 - A missing team cannot be retrieved.
+
+    // TC11 - Không thể truy xuất đội bóng không tồn tại.
     @Test
-    void TC_T232_shouldReturnNullForMissingTeam() {
+    void TC11_shouldReturnNullForMissingTeam() {
         Database database = new Database();
 
         assertNull(database.getTeam("UNKNOWN"));
     }
 
-    // TC-T233 - A missing group cannot be retrieved.
+    // TC12 - Không thể truy xuất bảng đấu không tồn tại.
     @Test
-    void TC_T233_shouldReturnNullForMissingGroup() {
+    void TC12_shouldReturnNullForMissingGroup() {
         Database database = new Database();
 
         assertNull(database.getGroup("UNKNOWN"));
     }
 
-    // TC-T234 - A missing match cannot be retrieved.
+    // TC13 - Không thể truy xuất trận đấu không tồn tại.
     @Test
-    void TC_T234_shouldReturnNullForMissingMatch() {
+    void TC13_shouldReturnNullForMissingMatch() {
         Database database = new Database();
 
         assertNull(database.getMatch("UNKNOWN"));
     }
 
-    // TC-T235 - A missing player cannot be retrieved.
+    // TC14 - Không thể truy xuất cầu thủ không tồn tại.
     @Test
-    void TC_T235_shouldReturnNullForMissingPlayer() {
+    void TC14_shouldReturnNullForMissingPlayer() {
         Database database = new Database();
 
         assertNull(database.getPlayer("UNKNOWN"));
     }
 
-    // TC-T236 - A missing match result cannot be retrieved.
+    // TC15 - Không thể truy xuất kết quả trận đấu không tồn tại.
     @Test
-    void TC_T236_shouldReturnNullForMissingResult() {
+    void TC15_shouldReturnNullForMissingResult() {
         Database database = new Database();
 
         assertNull(database.getResult("UNKNOWN"));
     }
-    
-    // TC-T244 - Store and retrieve a second team.
-    @Test
-    void TC_T244_shouldSaveAndRetrieveSecondTeam() {
-    Database database = new Database();
 
-    assertTrue(
-            database.saveTeam("T02", "Thailand")
-    );
-
-    assertEquals(
-            "Thailand",
-            database.getTeam("T02")
-    );
-}
-    // TC-T245 - Store and retrieve a second group.
+    // TC16 - Lưu và truy xuất đội bóng thứ hai.
     @Test
-    void TC_T245_shouldSaveAndRetrieveSecondGroup() {
+    void TC16_shouldSaveAndRetrieveSecondTeam() {
         Database database = new Database();
 
         assertTrue(
-                database.saveGroup("G02", "Group B")
+                database.saveTeam(
+                        "T02",
+                        "Thailand"
+                )
+        );
+
+        assertEquals(
+                "Thailand",
+                database.getTeam("T02")
+        );
+    }
+
+    // TC17 - Lưu và truy xuất bảng đấu thứ hai.
+    @Test
+    void TC17_shouldSaveAndRetrieveSecondGroup() {
+        Database database = new Database();
+
+        assertTrue(
+                database.saveGroup(
+                        "G02",
+                        "Group B"
+                )
         );
 
         assertEquals(
@@ -210,9 +217,9 @@ class DatabaseTest {
         );
     }
 
-    // TC-T246 - Store and retrieve a second match.
+    // TC18 - Lưu và truy xuất trận đấu thứ hai.
     @Test
-    void TC_T246_shouldSaveAndRetrieveSecondMatch() {
+    void TC18_shouldSaveAndRetrieveSecondMatch() {
         Database database = new Database();
 
         assertTrue(
@@ -228,9 +235,9 @@ class DatabaseTest {
         );
     }
 
-    // TC-T247 - Store and retrieve a second player.
+    // TC19 - Lưu và truy xuất cầu thủ thứ hai.
     @Test
-    void TC_T247_shouldSaveAndRetrieveSecondPlayer() {
+    void TC19_shouldSaveAndRetrieveSecondPlayer() {
         Database database = new Database();
 
         assertTrue(
@@ -246,9 +253,9 @@ class DatabaseTest {
         );
     }
 
-    // TC-T248 - Store and retrieve a different match result.
+    // TC20 - Lưu và truy xuất một kết quả trận đấu khác.
     @Test
-    void TC_T248_shouldSaveAndRetrieveSecondMatchResult() {
+    void TC20_shouldSaveAndRetrieveSecondMatchResult() {
         Database database = new Database();
 
         assertTrue(
